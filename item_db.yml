@@ -1,0 +1,2493 @@
+# This file is a part of rAthena.
+#   Copyright(C) 2019 rAthena Development Team
+#   https://rathena.org - https://github.com/rathena
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+###########################################################################
+# Item Database
+###########################################################################
+#
+# Item Settings
+#
+###########################################################################
+# - Id                      Item ID.
+#   AegisName               Server name to reference the item in scripts and lookups, should use no spaces.
+#   Name                    Name in English for displaying as output.
+#   Type                    Item type. (Default: Etc)
+#   SubType                 Weapon or Ammo type. (Default: 0)
+#   Buy                     Buying price. When not specified, becomes double the sell price. (Default: 0)
+#   Sell                    Selling price. When not specified, becomes half the buy price. (Default: 0)
+#   Weight                  Item weight. Each 10 is 1 weight. (Default: 0)
+#   Attack                  Weapon's attack. (Default: 0)
+#   MagicAttack             Weapon's magic attack. (Default: 0)
+#   Defense                 Armor's defense. (Default: 0)
+#   Range                   Weapon's attack range. (Default: 0)
+#   Slots                   Available slots in item. (Default: 0)
+#   Jobs                    Jobs that can equip the item. (Map default is 'All: true')
+#   Classes                 Upper class types that can equip the item. (Map default is 'All: true')
+#   Gender                  Gender that can equip the item. (Default: Both)
+#   Locations               Equipment's placement. (Default: None)
+#   WeaponLevel             Weapon level. (Default: 0)
+#   EquipLevelMin           Minimum required level to equip. (Default: 0)
+#   EquipLevelMax           Maximum level that can equip. (Default: 0)
+#   Refineable              If the item can be refined. (Default: false)
+#   View                    View sprite of an item. (Default: 0)
+#   AliasName               Another item's AegisName that will be sent to the client instead of this item's AegisName. (Default: null)
+#   Flags:                  Item flags. (Default: null)
+#     BuyingStore           If the item is available for Buyingstores. (Default: false)
+#     DeadBranch            If the item is a Dead Branch. (Default: false)
+#     Container             If the item is part of a container. (Default: false)
+#     UniqueId              If the item is a unique stack. (Default: false)
+#     BindOnEquip           If the item is bound to the character upon equipping. (Default: false)
+#     DropAnnounce          If the item has a special announcement to self on drop. (Default: false)
+#     NoConsume             If the item is consumed on use. (Default: false)
+#     DropEffect            If the item has a special effect on the ground when dropped by a monster. (Default: None)
+#   Delay:                  Item use delay. (Default: null)
+#     Duration              Duration of delay in seconds.
+#     Status                Status Change used to track delay. (Default: None)
+#   Stack:                  Item stack amount. (Default: null)
+#     Amount                Maximum amount that can be stacked.
+#     Inventory             If the stack is applied to player's inventory. (Default: true)
+#     Cart                  If the stack is applied to the player's cart. (Default: false)
+#     Storage               If the stack is applied to the player's storage. (Default: false)
+#     GuildStorage          If the stack is applied to the player's guild storage. (Default: false)
+#   NoUse:                  Conditions when the item is unusable. (Default: null)
+#     Override              Group level to override these conditions.
+#     Sitting               If the item can not be used while sitting. (Default: false)
+#   Trade:                  Trade restrictions. (Default: null)
+#     Override              Group level to override these conditions.
+#     NoDrop                If the item can not be dropped. (Default: false)
+#     NoTrade               If the item can not be traded. (Default: false)
+#     TradePartner          If the item can not be traded to the player's partner. (Default: false)
+#     NoSell                If the item can not be sold. (Default: false)
+#     NoCart                If the item can not be put in a cart. (Default: false)
+#     NoStorage             If the item can not be put in a storage. (Default: false)
+#     NoGuildStorage        If the item can not be put in a guild storage. (Default: false)
+#     NoMail                If the item can not be put in a mail. (Default: false)
+#     NoAuction             If the item can not be put in an auction. (Default: false)
+#   Script                  Script to execute when the item is used/equipped. (Default: null)
+#   EquipScript             Script to execute when the item is equipped. (Default: null)
+#   UnEquipScript           Script to execute when the item is unequipped or when a rental item expires. (Default: null)
+###########################################################################
+
+Header:
+  Type: ITEM_DB
+  Version: 1
+
+Body:
+  - Id: 56000
+    AegisName: _archangelwings
+    Name: archabgel_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2000
+    Script: |
+      bonus bAllStats,5;
+  - Id: 56001
+    AegisName: _archdemonwings
+    Name: archdemon_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2001
+  - Id: 56002
+    AegisName: _arcticwings
+    Name: arctic_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 1060
+    Script: |
+      bonus bInt,7; bonus bMatk,30;
+  - Id: 56003
+    AegisName: _bigangelwings
+    Name: bigangel_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2003
+  - Id: 56004
+    AegisName: _bloodwings
+    Name: bloody_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2004
+  - Id: 56005
+    AegisName: _bloodybutterflywings
+    Name: bloodbutterfly_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2005
+  - Id: 56006
+    AegisName: _bluebutterflywings
+    Name: bbutterfly_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2006
+  - Id: 56007
+    AegisName: _darkfairywings
+    Name: Black_fairy_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2007
+    Script: |
+      
+  - Id: 56008
+    AegisName: _devilingwings
+    Name: Devil_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2008
+    Script: |
+      bonus bStr,3; bonus bAgi,3; bonus bDef,5;
+  - Id: 56009
+    AegisName: _dragonwings
+    Name: Dragon_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 586
+    Script: |
+      bonus bStr,7; bonus bBaseAtk,30;
+  - Id: 56010
+    AegisName: _elementalwings
+    Name: Elemental_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 589
+    Script: |
+      bonus bMaxHP,1000; bonus2 bSubEle,Ele_Neutral,2; bonus2 bSubEle,Ele_Water,2; bonus2 bSubEle,Ele_Earth,2; bonus2 bSubEle,Ele_Fire,2; bonus2 bSubEle,Ele_Wind,2; bonus2 bSubEle,Ele_Poison,2; bonus2 bSubEle,Ele_Holy,2; bonus2 bSubEle,Ele_Dark,2; bonus2 bSubEle,Ele_Ghost,2; bonus2 bSubEle,Ele_Undead,2; if(isequipped(56150,56010)) bonus2 bSubEle,Ele_Neutral,4; bonus2 bSubEle,Ele_Water,4; bonus2 bSubEle,Ele_Earth,4; bonus2 bSubEle,Ele_Fire,4; bonus2 bSubEle,Ele_Wind,4; bonus2 bSubEle,Ele_Poison,4; bonus2 bSubEle,Ele_Holy,4; bonus2 bSubEle,Ele_Dark,4; bonus2 bSubEle,Ele_Ghost,4; bonus2 bSubEle,Ele_Undead,4;
+  - Id: 56011
+    AegisName: _fireywings
+    Name: Icarus_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 612
+    Script: |
+      bonus bAgi,7; bonus2 bSubEle,Ele_Water,10; bonus2 bSubEle,Ele_Wind,10; bonus2 bSubEle,Ele_Fire,10; bonus2 bSubEle,Ele_Earth,10; bonus2 bSubEle,Ele_Poison,10; bonus2 bSubEle,Ele_Undead,10; bonus2 bSubEle,Ele_Holy,10; bonus2 bSubEle,Ele_Dark,10; bonus2 bSubEle,Ele_Ghost,10;
+  - Id: 56012
+    AegisName: _gargoylewings
+    Name: Gargoyle_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2012
+    Script: |
+      bonus bDex,5; bonus2 bSubRace,RC_Undead,10 bonus2 bAddEff,Eff_Stone,600;
+  - Id: 56013
+    AegisName: _greatevilwings
+    Name: Demon_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2013
+  - Id: 56014
+    AegisName: _vampirewings
+    Name: Vampire_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2014
+  - Id: 56015
+    AegisName: _whitefairywings
+    Name: White_fairy_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2015
+  - Id: 56017
+    AegisName: _wingsofavalon
+    Name: avalon_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2017
+  - Id: 56018
+    AegisName: Angel_Wings
+    Name: Angel_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2018
+  - Id: 56019
+    AegisName: back_sword
+    Name: Back Sword
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2019
+  - Id: 56020
+    AegisName: black_helm
+    Name: Black Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2020
+    Script: |
+      bonus bVit,5; bonus bMaxHPrate,5;
+  - Id: 56021
+    AegisName: Butterfly_Wings
+    Name: Butterfly_wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2021
+  - Id: 56022
+    AegisName: Circulo_de_Amor
+    Name: Flower Ring
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2022
+  - Id: 56023
+    AegisName: Circulo_de_Dragao
+    Name: Dragon Aura
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2023
+    Script: |
+      bonus bInt,10; bonus bMatk,25; if(isequipped(56147,56170)) bonus bInt,5; bonus bMatkRate,4; bonus bNoGemStone;
+  - Id: 56024
+    AegisName: Circulo_de_Poder
+    Name: Hell Ring
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2024
+  - Id: 56026
+    AegisName: Dark_Valkyrie_Helm
+    Name: Darks Valkyrie
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2026
+  - Id: 56027
+    AegisName: Demon_Wings
+    Name: Demon Wings
+    Type: Armor
+    Weight: 10
+    Defense: 10
+    Jobs:
+      Acolyte: true
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Gunslinger: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Monk: true
+      Ninja: true
+      Novice: true
+      Priest: true
+      Rebellion: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      StarGladiator: true
+      SuperNovice: true
+      Swordman: true
+      Taekwon: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2027
+    Script: |
+      bonus bVit,10; bonus bMaxHPrate,7; bonus2 bSubEle,Ele_Fire,5; if(isequipped(56020,56027)) bonus bVit,5; bonus bMaxHPrate,4; bonus bMaxHP,1000;
+  - Id: 56028
+    AegisName: dowry
+    Name: Dowry Hat
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2028
+    Script: |
+      bonus bStr,15;
+  - Id: 56029
+    AegisName: Elmo_de_Valkyria_Azul
+    Name: Blue Valkyrie Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2029
+  - Id: 56030
+    AegisName: Elmo_de_Valkyria_Branco
+    Name: Valkyrie Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2030
+    Script: |
+      bonus2 bSubRace,RC_DemiHuman,10; bonus2 bAddRace,RC_DemiHuman,10;
+  - Id: 56031
+    AegisName: Elmo_de_Valkyria_Preto
+    Name: Black_Valkyrie_Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2031
+    Script: |
+      bonus bStr,5; bonus2 bAddRace,RC_DemiHuman,5;
+  - Id: 56032
+    AegisName: Elmo_de_Valkyria_Rosa
+    Name: Red_Valkyrie_Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2032
+    Script: |
+      bonus2 bSubRace,RC_DemiHuman,10; bonus2 bAddRace,RC_DemiHuman,10;
+  - Id: 56033
+    AegisName: Elmo_de_Valkyria_Verde
+    Name: Fusion_Valkyrie_Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2033
+    Script: |
+      bonus bStr,2; bonus bAgi,2; bonus2 bAddRace,RC_DemiHuman,5;
+  - Id: 56034
+    AegisName: Elmo_de_Valkyria_Ying_Yang
+    Name: Fusion Valkyrie Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2034
+    Script: |
+      bonus bVit,5; bonus bStr,5; bonus bInt,5; bonus2 bAddRace,RC_DemiHuman,10;
+  - Id: 56035
+    AegisName: Fallen_Wings
+    Name: wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2035
+    Script: |
+      bonus bVit,5;
+  - Id: 56036
+    AegisName: hokage
+    Name: Hokage Hat
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2036
+    Script: |
+      bonus bStr,3; bonus2 bAddRace,RC_DemiHuman,3;
+  - Id: 56037
+    AegisName: kakashi
+    Name: Kakashi Headprotector
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2037
+    Script: |
+      bonus bDex,20;
+  - Id: 56038
+    AegisName: konohahp
+    Name: Fire Headprotector
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2038
+    Script: |
+      bonus bStr,10;
+  - Id: 56039
+    AegisName: lightninghp
+    Name: Lightining Headprotector
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2039
+    Script: |
+      bonus bLuk,10;
+  - Id: 56040
+    AegisName: mysthp
+    Name: Wind Headprotector
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2040
+    Script: |
+      bonus bInt,10;
+  - Id: 56041
+    AegisName: Niflheim_Wings
+    Name: Niflheim wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2041
+    Script: |
+      bonus bVit,25; bonus bMaxHPrate,30; bonus2 bSubRace,RC_DemiHuman,25; bonus2 bAddRace,RC_DemiHuman,25; bonus2 bSubEle,Ele_Neutral,20; bonus2 bSubEle,Ele_Water,20; bonus2 bSubEle,Ele_Earth,20; bonus2 bSubEle,Ele_Fire,20; bonus2 bSubEle,Ele_Wind,20; bonus2 bSubEle,Ele_Poison,20; bonus2 bSubEle,Ele_Holy,20; bonus2 bSubEle,Ele_Dark,20; bonus2 bSubEle,Ele_Ghost,20; bonus2 bSubEle,Ele_Undead,20;
+  - Id: 56042
+    AegisName: rockhp
+    Name: Eart Headprotector
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2042
+    Script: |
+      bonus bVit,10;
+  - Id: 56043
+    AegisName: sandhp
+    Name: Wind Headprotector
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2043
+    Script: |
+      bonus bAgi,10;
+  - Id: 56044
+    AegisName: Satan_wings
+    Name: Satan wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2044
+    Script: |
+      bonus bStr,10; bonus bVit,5; bonus bInt,5; bonus2 bAddRace,RC_DemiHuman,10; if(isequipped(46075))  bonus bAllStats,2;
+  - Id: 56045
+    AegisName: Shaman_Wings
+    Name: Shaman wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2045
+    Script: |
+      bonus bInt,15; bonus bMatkRate,10;
+  - Id: 56046
+    AegisName: soundhp
+    Name: Sound Headprotector
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2046
+    Script: |
+      bonus bDex,10;
+  - Id: 56047
+    AegisName: Sygnun_Helm
+    Name: Sygnus Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2047
+    Script: |
+      bonus bDex,10; bonus bLongAtkRate,15; bonus2 bAddRace,RC_DemiHuman,10; bonus2 bSkillAtk,"AC_DOUBLE",20;
+  - Id: 56048
+    AegisName: Vengeance_Wing
+    Name: Vengeance wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2048
+    Script: |
+      bonus bDex,15; bonus bLongAtkRate,10;
+  - Id: 56049
+    AegisName: Vindicated_Wing
+    Name: Vindicated wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2049
+    Script: |
+      bonus bStr,15;
+  - Id: 56050
+    AegisName: _Black_Note_Headphone
+    Name: Black Note Headphone
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2050
+    Script: |
+      bonus2 bSubRace,RC_DemiHuman,10; bonus bAllStats,7; bonus3 bAutoSpell,"CG_TAROTCARD",1,50;
+  - Id: 56051
+    AegisName: _Akatsuki_Hat
+    Name: Akatsuki Hat
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 833
+    Script: |
+      bonus bStr,5; bonus2 bAddEle,Ele_Holy,5; bonus2 bAddClass,Class_Boss,5; bonus bBaseAtk,50;
+  - Id: 56052
+    AegisName: _Board
+    Name: Bords
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2052
+    Script: |
+      bonus bAgi,5; bonus bStr,1; bonus bSpeedRate,20;
+  - Id: 56053
+    AegisName: _Creed_Helm
+    Name: Creed Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2053
+    Script: |
+      bonus bStr,10; bonus2 bSubRace,RC_DemiHuman,10;
+  - Id: 56054
+    AegisName: _dayring
+    Name: Day Ring
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Classes:
+      Upper: true
+      All_Upper: true
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2054
+    Script: |
+      bonus bMdef,1; bonus2 bSubRace,RC_DemiHuman,20; bonus2 bSubRace,RC_PLAYER_HUMAN,20;
+  - Id: 56055
+    AegisName: _Evil_Druid_Hat
+    Name: Evil Druid Hat
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2055
+    Script: |
+      bonus bAllStats,2;
+  - Id: 56056
+    AegisName: _fallen_ghost
+    Name: Fallen Ghost
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2056
+    Script: |
+      bonus bInt,10; bonus2 bSubRace,RC_DemiHuman,15; bonus2 bAddRace,RC_DemiHuman,15;
+  - Id: 56057
+    AegisName: _Hollow_Mask
+    Name: Hollow Mask
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2057
+    Script: |
+      bonus bHit,30; bonus bMaxHPrate,3; bonus bIntravision,0;
+  - Id: 56058
+    AegisName: _Gundam_Helm
+    Name: Gundam Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2058
+  - Id: 56059
+    AegisName: _Claw_Wing
+    Name: Claw Wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 834
+    Script: |
+      bonus bDex,7; bonus bLongAtkRate,10; bonus bLongAtkRate,3;
+  - Id: 56060
+    AegisName: _nightring
+    Name: Night RIng
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Classes:
+      Upper: true
+      All_Upper: true
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2060
+    Script: |
+      bonus2 bAddRace,RC_DemiHuman,20; bonus2 bAddRace,RC_PLAYER_HUMAN,20;
+  - Id: 56061
+    AegisName: _Sidehat
+    Name: Side Hat
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2061
+  - Id: 56062
+    AegisName: _redvampirewings
+    Name: Red Dragon Wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2062
+    Script: |
+      bonus bAllstats,5; bonus bAtkEle,Ele_Earth;bonus3 bAddEff,Eff_Curse,5000,ATF_SHORT;bonus2 bAddRace,RC_DemiHuman,10; specialeffect2 375; specialeffect2 590; if(isequipped(46032)) skill "TK_SEVENWIND",4; bonus bInt,3;
+  - Id: 56063
+    AegisName: darkdwings
+    Name: Black Dragon Wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2063
+    Script: |
+      bonus bAllstats,5; bonus bAtkEle,Ele_Undead;bonus3 bAddEff,Eff_Curse,5000,ATF_SHORT;bonus2 bAddRace,RC_DemiHuman,10; specialeffect2 375; specialeffect2 590; if(isequipped(26031)) skill "TK_SEVENWIND",4; bonus bStr,3;
+  - Id: 56064
+    AegisName: dragon_wing
+    Name: dragon_wing
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2064
+    Script: |
+      specialeffect2 375; specialeffect2 590; bonus bAllstats,7; bonus bAtkEle,Ele_Wind; bonus3 bAddEff,Eff_Curse,5000,ATF_SHORT; bonus2 bAddRace,RC_DemiHuman,10; if(isequipped(26030))  skill "TK_SEVENWIND",5; bonus bStr,5; bonus bDex,5;
+  - Id: 56065
+    AegisName: dhv2
+    Name: Dragon Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2065
+    Script: |
+      bonus2 bSubRace,RC_DemiHuman,10; bonus2 bAddRace,RC_DemiHuman,10;
+  - Id: 56066
+    AegisName: dhv5
+    Name: Dragon Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2066
+    Script: |
+      bonus bVit,20; bonus bMaxHPrate,10; bonus2 bSubRace,RC_DemiHuman,20; bonus2 bAddRace,RC_DemiHuman,20; skill "TF_HIDING",1;
+    UnEquipScript: |
+      sc_end SC_HIDING;
+  - Id: 56067
+    AegisName: _Super_Saiya_Aura
+    Name: Super Saiyan Aura
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2067
+    Script: |
+      bonus bAllstats,5;
+  - Id: 56068
+    AegisName: green_lhz_aura
+    Name: Green Aura
+    Type: Armor
+    Buy: 20
+    Weight: 10
+    Slots: 1
+    Locations:
+      Costume_Head_Low: true
+    View: 2068
+    Script: |
+      bonus bSpeedAddRate,15;
+  - Id: 56069
+    AegisName: lhz_black
+    Name: Black Aura
+    Type: Armor
+    Buy: 20
+    Weight: 10
+    Slots: 1
+    Locations:
+      Costume_Head_Low: true
+    View: 2069
+    Script: |
+      bonus bSpeedAddRate,15;
+  - Id: 56070
+    AegisName: lhz_blue
+    Name: Blue Aura
+    Type: Armor
+    Buy: 20
+    Slots: 1
+    Locations:
+      Costume_Head_Low: true
+    View: 2070
+    Script: |
+      bonus bSpeedAddRate,15;
+  - Id: 56071
+    AegisName: lhz_gold
+    Name: Gold Aura
+    Type: Armor
+    Buy: 20
+    Weight: 10
+    Slots: 1
+    Locations:
+      Costume_Head_Low: true
+    View: 2071
+    Script: |
+      bonus bSpeedAddRate,15;
+  - Id: 56072
+    AegisName: lhz_red
+    Name: Red Aura
+    Type: Armor
+    Buy: 20
+    Weight: 10
+    Slots: 1
+    Locations:
+      Costume_Head_Low: true
+    View: 2072
+    Script: |
+      bonus bSpeedAddRate,15;
+  - Id: 56073
+    AegisName: saears
+    Name: Sea Ears
+    Type: Armor
+    Buy: 20
+    Weight: 260
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Low: true
+    View: 2073
+  - Id: 56074
+    AegisName: sawings
+    Name: wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2074
+    Script: |
+      bonus bStr,10; bonus2 bAddRace,RC_DemiHuman,15; bonus2 bSubRace,RC_DemiHuman,20;
+  - Id: 56075
+    AegisName: sahelm
+    Name: Sa Helm
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2075
+    Script: |
+      bonus bStr,10; bonus2 bAddRace,RC_DemiHuman,15; bonus2 bSubRace,RC_DemiHuman,15;
+  - Id: 56076
+    AegisName: _Band_Aid
+    Name: Band_Aid
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2076
+    Script: |
+      bonus bAllStats,3; bonus2 bSubRace,RC_DemiHuman,5;
+  - Id: 56077
+    AegisName: rcyc
+    Name: Red Cyclops
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2077
+    Script: |
+      bonus bDex,5; bonus bStr,5; bonus bInt,5; bonus bFlee,30; if(BaseClass==Job_Gunslinger||BaseClass==Job_Mage||BaseClass==Job_Swordman) bonus bMaxHPrate,10;
+  - Id: 56078
+    AegisName: runes
+    Name: Rune of Knight
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2078
+    Script: |
+      bonus bDex,10; bonus bLongAtkRate,5; if(isequipped(56088,56099)) bonus bDex,5; bonus bLongAtkRate,4; bonus bBaseAtk,40;
+  - Id: 56079
+    AegisName: wcyc
+    Name: White Cyclops Eye
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    Refineable: true
+    View: 2079
+    Script: |
+      bonus bStr,7; bonus bAtkRate,3;
+  - Id: 56080
+    AegisName: quest_item
+    Name: Credit
+    Type: Etc
+    Buy: 1000
+    Weight: 100
+  - Id: 56081
+    AegisName: Tobi_Mask
+    Name: Tobi Mask
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2080
+    Script: |
+      bonus bInt,10; bonus bStr,10; bonus2 bSubRace,RC_DemiHuman,10;
+  - Id: 56082
+    AegisName: Traveler_Hat
+    Name: Traveler Hat
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2081
+    Script: |
+      bonus bLuk,3; bonus bCritAtkRate,5; bonus bCritAtkRate,3;
+  - Id: 56083
+    AegisName: Snowboard
+    Name: SnowBroad
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2082
+    Script: |
+      bonus bAllStats,5;
+  - Id: 56084
+    AegisName: Snow_Goggles
+    Name: Snow Goggles
+    Type: Armor
+    Buy: 20
+    Weight: 260
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Low: true
+    View: 2083
+    Script: |
+      bonus bAllStats,5;
+  - Id: 56085
+    AegisName: Snow_Beanie
+    Name: Snow Beanie
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2084
+    Script: |
+      bonus bAllStats,5;
+  - Id: 56086
+    AegisName: _avvh
+    Name: Angelic Valkyrie Helm
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 835
+    Script: |
+      bonus bStr,5; bonus2 bSubEle,Ele_Neutral,4; bonus2 bSubEle,Ele_Water,4; bonus2 bSubEle,Ele_Earth,4; bonus2 bSubEle,Ele_Fire,4; bonus2 bSubEle,Ele_Wind,4; bonus2 bSubEle,Ele_Poison,4; bonus2 bSubEle,Ele_Holy,4; bonus2 bSubEle,Ele_Dark,4; bonus2 bSubEle,Ele_Ghost,4; bonus2 bSubEle,Ele_Undead,4;
+  - Id: 56087
+    AegisName: _catearsberet
+    Name: Cat_Ears_Beret
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2086
+  - Id: 56088
+    AegisName: _dragonhelm
+    Name: Dragon Helm
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 880
+    Script: |
+      bonus bDex,5; bonus bLongAtkRate,5;
+  - Id: 56089
+    AegisName: _megaman_zero_helm
+    Name: Megaman Zero Helm
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2088
+  - Id: 56090
+    AegisName: _pilipinascap
+    Name: Philipine Cap
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2089
+    Script: |
+      bonus bAllStats,5;
+  - Id: 56091
+    AegisName: _Reisz_Helmet
+    Name: Reisz Helmet
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2090
+    Script: |
+      bonus bAllStats,5;
+  - Id: 56092
+    AegisName: _saiyanhair
+    Name: Saiyan Hair
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2091
+    Script: |
+      bonus bStr,10; bonus bAgi,5; bonus2 bSubRace,RC_DemiHuman,8;
+  - Id: 56093
+    AegisName: _dragcyc
+    Name: Red Dragon Eye Cyclops
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2092
+    Script: |
+      bonus bAllStats,5; bonus2 bSubRace,RC_DemiHuman,10; bonus bFlee,30; skill "MG_SIGHT",1;
+    UnEquipScript: |
+      sc_end SC_SIGHT;
+  - Id: 56094
+    AegisName: bcyc
+    Name: Black_Cyclops
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    Refineable: true
+    View: 2093
+    Script: |
+      bonus bStr,7; bonus2 bAddRace,RC_DemiHuman,4;
+  - Id: 56095
+    AegisName: robotears
+    Name: Robo_Ears
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    Refineable: true
+    View: 2094
+    Script: |
+      bonus bVit,7; bonus bMaxHPrate,5;
+  - Id: 56096
+    AegisName: lhz_aura
+    Name: Lighthalzen Aura
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Low: true
+    View: 2095
+    Script: |
+      bonus bAllstats,5;
+  - Id: 56097
+    AegisName: Blade_of_Dragon
+    Name: Blade_of_Dragon
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2096
+  - Id: 56098
+    AegisName: baracuda_wings
+    Name: Baracuda Wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2097
+  - Id: 56099
+    AegisName: _goggle
+    Name: Asigth
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    Refineable: true
+    View: 881
+    Script: |
+      bonus bDex,7; bonus2 bAddRace,RC_DemiHuman,5;
+  - Id: 56100
+    AegisName: _dre_headphones_red
+    Name: dre_headphones_red
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2099
+    Script: |
+      bonus bAllstats,5;
+  - Id: 56101
+    AegisName: _dre_headphones_black
+    Name: dre_headphones_black
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2100
+    Script: |
+      bonus bAllstats,5;
+  - Id: 56102
+    AegisName: _gmman
+    Name: Gm_Man
+    Type: Armor
+    Buy: 50
+    Weight: 100
+    Defense: 5
+    Range: 1
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Gunslinger: true
+      Hunter: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Monk: true
+      Ninja: true
+      Novice: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      StarGladiator: true
+      SuperNovice: true
+      Swordman: true
+      Taekwon: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Head_Top: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2101
+  - Id: 56103
+    AegisName: _gmwoman
+    Name: GM_Woman
+    Type: Armor
+    Buy: 50
+    Weight: 100
+    Defense: 5
+    Range: 1
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Gunslinger: true
+      Hunter: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Monk: true
+      Ninja: true
+      Novice: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      StarGladiator: true
+      SuperNovice: true
+      Swordman: true
+      Taekwon: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Head_Top: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2102
+  - Id: 56104
+    AegisName: _dragonsword
+    Name: Dragon Sword
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 883
+    Script: |
+      bonus bStr,10; bonus bMaxHPrate,4; bonus2 bAddEle,Ele_Holy,5; bonus2 bAddClass,Class_Boss,5; if(isequipped(56051,56079)) bonus2 bAddEle,Ele_Holy,5; bonus2 bAddClass,Class_Boss,5; bonus bBaseAtk,40; bonus bAtkRate,4;
+  - Id: 56105
+    AegisName: _spikehp
+    Name: Spike Headphone
+    Type: Armor
+    Buy: 50
+    Weight: 100
+    Defense: 5
+    Range: 1
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Gunslinger: true
+      Hunter: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Monk: true
+      Ninja: true
+      Novice: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      StarGladiator: true
+      SuperNovice: true
+      Swordman: true
+      Taekwon: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Head_Top: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2104
+  - Id: 56106
+    AegisName: _avarmor
+    Name: Angelic_armor
+    Type: Armor
+    Buy: 10
+    Weight: 100
+    Defense: 1
+    Slots: 1
+    Locations:
+      Armor: true
+    Refineable: true
+    Script: |
+      bonus bHPrecovRate,32767; bonus2 bResEff,Eff_Stun,10000; bonus2 bResEff,Eff_Freeze,10000; bonus bStr,4; bonus bAgi,4; bonus bVit,10; bonus bInt,10; bonus bLuk,4; bonus2 bSubEle,Ele_Neutral,5; bonus2 bSubEle,Ele_Water,5; bonus2 bSubEle,Ele_Earth,5; bonus2 bSubEle,Ele_Fire,5; bonus2 bSubEle,Ele_Wind,5; bonus2 bSubEle,Ele_Poison,5; bonus2 bSubEle,Ele_Holy,5; bonus2 bSubEle,Ele_Dark,5; bonus2 bSubEle,Ele_Ghost,5; bonus2 bSubEle,Ele_Undead,5; bonus bUnbreakableArmor,0;
+  - Id: 56107
+    AegisName: _avboots
+    Name: Angelic_Shoes
+    Type: Armor
+    Buy: 400
+    Weight: 260
+    Defense: 1
+    Slots: 1
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      bonus bMaxHPRate,25; bonus bStr,3; bonus bAgi,3; bonus bVit,5; bonus bInt,5; bonus bLuk,3; bonus bHealPower,32767; bonus bUnbreakableShoes,0; bonus3 bAutoSpell,"AL_HEAL",1+9*(getskilllv("AL_HEAL")==10),20; if(BaseClass==Job_Mage||BaseClass==Job_Acolyte) bonus2 bAddEffWhenHit,Eff_Stun,1000;
+  - Id: 56108
+    AegisName: _avrobe
+    Name: Angelic_Manteau
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 1
+    Slots: 1
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bStr,5; bonus bAgi,5; bonus bVit,8; bonus bInt,5; bonus bLuk,5; bonus bUnbreakableGarment,0; if(BaseClass==Job_Mage||BaseClass==Job_Archer||BaseClass==Job_Acolyte) bonus bFlee2,7+(getequiprefinerycnt(EQI_GARMENT)*3); else if(BaseClass==Job_Swordman||BaseClass==Job_Merchant||BaseClass==Job_Thief) bonus bShortWeaponDamageReturn,7+(getequiprefinerycnt(EQI_GARMENT)*3);
+  - Id: 56109
+    AegisName: _avshield
+    Name: Angelic_shield
+    Type: Armor
+    Buy: 500
+    Weight: 300
+    Defense: 3
+    Slots: 1
+    Locations:
+      Left_Hand: true
+    Refineable: true
+    View: 1
+    Script: |
+      bonus bShortWeaponDamageReturn,8; bonus bStr,3; bonus bAgi,3; bonus bVit,10; bonus bInt,20; bonus bLuk,3; bonus2 bSubEle,Ele_Neutral,10; bonus2 bSubEle,Ele_Water,2; bonus2 bSubEle,Ele_Earth,2; bonus2 bSubEle,Ele_Fire,2; bonus2 bSubEle,Ele_Wind,2; bonus2 bSubEle,Ele_Poison,2; bonus2 bSubEle,Ele_Holy,2; bonus2 bSubEle,Ele_Dark,2; bonus2 bSubEle,Ele_Ghost,2; bonus2 bSubEle,Ele_Undead,2; bonus bUnbreakableShield,0; bonus bNoKnockback,0;
+  - Id: 56110
+    AegisName: _dragonarmor
+    Name: Dragon Armor
+    Type: Armor
+    Buy: 10
+    Weight: 100
+    Defense: 1
+    Slots: 1
+    Locations:
+      Armor: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,3; bonus bUnbreakableArmor,0; bonus2 bResEff,Eff_Stun,5000; bonus2 bResEff,Eff_Freeze,8000; bonus3 bSubEle,Ele_Neutral,5,BF_SHORT; bonus3 bSubEle,Ele_Water,5,BF_SHORT; bonus3 bSubEle,Ele_Earth,5,BF_SHORT; bonus3 bSubEle,Ele_Fire,5,BF_SHORT; bonus3 bSubEle,Ele_Wind,5,BF_SHORT; bonus3 bSubEle,Ele_Poison,5,BF_SHORT; bonus3 bSubEle,Ele_Holy,5,BF_SHORT; bonus3 bSubEle,Ele_Dark,5,BF_SHORT; bonus3 bSubEle,Ele_Ghost,5,BF_SHORT; bonus3 bSubEle,Ele_Undead,5,BF_SHORT;
+  - Id: 56111
+    AegisName: _dragonboots
+    Name: Dragon Shoes
+    Type: Armor
+    Buy: 400
+    Weight: 260
+    Defense: 1
+    Slots: 1
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,3; bonus bUnbreakableShoes,0; bonus bMaxHP,25; bonus bMaxSP,25; bonus2 bResEff,Eff_Sleep,10000;
+  - Id: 56112
+    AegisName: _dragonmanteau
+    Name: Dragon Manteau
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 1
+    Slots: 1
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,3; bonus bUnbreakableGarment,0; if(BaseClass==Job_Mage||BaseClass==Job_Archer||BaseClass==Job_Thief) bonus bFlee2,9+(getequiprefinerycnt(EQI_GARMENT)*2); else if(BaseClass==Job_Swordman||BaseClass==Job_Merchant||BaseClass==Job_Acolyte) bonus bShortWeaponDamageReturn,7+(getequiprefinerycnt(EQI_GARMENT)*2);
+  - Id: 56113
+    AegisName: _dragonplate
+    Name: Dragon Plate
+    Type: Armor
+    Buy: 10
+    Weight: 100
+    Defense: 1
+    Slots: 1
+    Locations:
+      Armor: true
+    Refineable: true
+  - Id: 56114
+    AegisName: _dragonshield
+    Name: Dragon Shield
+    Type: Armor
+    Buy: 500
+    Weight: 300
+    Defense: 3
+    Slots: 1
+    Locations:
+      Left_Hand: true
+    Refineable: true
+    View: 1
+    Script: |
+      bonus bAllStats,3; bonus2 bResEff,Eff_Stone,10000; bonus bShortWeaponDamageReturn,6;
+  - Id: 56115
+    AegisName: Torn_Wings
+    Name: Torn Wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2105
+    Script: |
+      bonus bLuk,7; bonus bCriticalRate,10; bonus bCritAtkRate,3;
+  - Id: 56116
+    AegisName: Phoenix_Wings
+    Name: Phoenix Wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 979
+    Script: |
+      bonus bVit,7; bonus2 bSubEle,Ele_Fire,5; bonus bMaxHPrate,5;
+  - Id: 56117
+    AegisName: Godlike_Armor
+    Name: Green_Valkyrie_Armor
+    Type: Armor
+    Buy: 10
+    Weight: 100
+    Defense: 1
+    Slots: 1
+    Locations:
+      Armor: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,1; bonus bUnbreakableArmor,0; bonus2 bResEff,Eff_Stun,5000; bonus2 bResEff,Eff_Freeze,10; bonus3 bSubEle,Ele_Neutral,3,BF_SHORT; bonus3 bSubEle,Ele_Water,3,BF_SHORT; bonus3 bSubEle,Ele_Earth,3,BF_SHORT; bonus3 bSubEle,Ele_Fire,3,BF_SHORT; bonus3 bSubEle,Ele_Wind,3,BF_SHORT; bonus3 bSubEle,Ele_Poison,3,BF_SHORT; bonus3 bSubEle,Ele_Holy,3,BF_SHORT; bonus3 bSubEle,Ele_Dark,1,BF_SHORT; bonus3 bSubEle,Ele_Ghost,1,BF_SHORT; bonus3 bSubEle,Ele_Undead,1,BF_SHORT;
+  - Id: 56118
+    AegisName: Godlike_Manteau
+    Name: Green_Valkyrie_Manteau
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 1
+    Slots: 1
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,1; bonus bUnbreakableGarment,0; if(BaseClass==Job_Mage||BaseClass==Job_Archer||BaseClass==Job_Thief) bonus bFlee2,4+(getequiprefinerycnt(EQI_GARMENT)*1); else if(BaseClass==Job_Swordman||BaseClass==Job_Merchant||BaseClass==Job_Acolyte) bonus bShortWeaponDamageReturn,4+(getequiprefinerycnt(EQI_GARMENT)*1);
+  - Id: 56119
+    AegisName: Godlike_Ornament
+    Name: Godlike Ornament
+    Type: Armor
+    Buy: 20
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 94
+    Script: |
+      bonus bStr,5; bonus bMdef,2;
+  - Id: 56120
+    AegisName: Godlike_Ring
+    Name: Godlike Ring
+    Type: Armor
+    Buy: 20
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 94
+    Script: |
+      bonus bStr,5; bonus bMdef,3;
+  - Id: 56121
+    AegisName: Godlike_Shield
+    Name: Green_Valkyrie_Shield
+    Type: Armor
+    Buy: 500
+    Weight: 300
+    Defense: 3
+    Slots: 1
+    Locations:
+      Left_Hand: true
+    Refineable: true
+    View: 1
+    Script: |
+      bonus bAllStats,2; bonus2 bResEff,Eff_Stone,10; bonus bShortWeaponDamageReturn,2;
+  - Id: 56122
+    AegisName: Godlike_Shoes
+    Name: Green_Valkyrie_Shoes
+    Type: Armor
+    Buy: 400
+    Weight: 260
+    Defense: 1
+    Slots: 1
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,1; bonus bUnbreakableShoes,0; bonus bMaxHP,3; bonus bMaxSP,3; bonus2 bResEff,Eff_Sleep,10;
+  - Id: 56123
+    AegisName: Godlike_Wings
+    Name: Godlike Wings
+    Type: Armor
+    Buy: 20
+    Weight: 5
+    Defense: 2
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 94
+    Script: |
+      bonus bStr,10; bonus bMdef,7;
+  - Id: 56124
+    AegisName: 메긴기오르드
+    Name: Megingjard_AGI
+    Type: Armor
+    Buy: 20
+    Weight: 5
+    Defense: 2
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 94
+    Script: |
+      bonus bAgi,10; bonus bMdef,7;
+  - Id: 56125
+    AegisName: 메긴기오르드
+    Name: Megingjard_INT
+    Type: Armor
+    Buy: 20
+    Weight: 5
+    Defense: 2
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 94
+    Script: |
+      bonus bInt,10; bonus bMdef,7;
+  - Id: 56126
+    AegisName: 메긴기오르드
+    Name: Megingjard_DEX
+    Type: Armor
+    Buy: 20
+    Weight: 5
+    Defense: 2
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 94
+    Script: |
+      bonus bDex,10; bonus bMdef,7;
+  - Id: 56127
+    AegisName: 메긴기오르드
+    Name: Megingjard_LUK
+    Type: Armor
+    Buy: 20
+    Weight: 5
+    Defense: 2
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 94
+    Script: |
+      bonus bLuk,10; bonus bMdef,7;
+  - Id: 56128
+    AegisName: 메긴기오르드
+    Name: Megingjard_VIT
+    Type: Armor
+    Buy: 20
+    Weight: 5
+    Defense: 2
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 94
+    Script: |
+      bonus bVit,10; bonus bMdef,7;
+  - Id: 56129
+    AegisName: 메긴기오르드
+    Name: Megingjard_Str
+    Type: Armor
+    Buy: 20
+    Weight: 5
+    Defense: 2
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 94
+    Script: |
+      bonus bStr,10; bonus bMdef,7;
+  - Id: 56130
+    AegisName: 오래된보라상자
+    Name: Box OF thunder Box
+    Type: Cash
+    Buy: 20
+    Weight: 10
+    Script: |
+      getitem 12028,100;
+  - Id: 56131
+    AegisName: _Freya_V1
+    Name: Freya_V1
+    Type: Armor
+    Buy: 50
+    Weight: 100
+    Defense: 5
+    Range: 1
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Gunslinger: true
+      Hunter: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Monk: true
+      Ninja: true
+      Novice: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      StarGladiator: true
+      SuperNovice: true
+      Swordman: true
+      Taekwon: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Head_Top: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2117
+    Script: |
+      bonus bVit,5; bonus bMaxHPrate,5; bonus2 bSubRace,RC_DemiHuman,5;
+  - Id: 56132
+    AegisName: _Freya_V2
+    Name: Freya_V2
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2118
+    Script: |
+      bonus bVit,5; bonus bMaxHPrate,5; bonus2 bSubRace,RC_DemiHuman,5;
+  - Id: 56133
+    AegisName: Freya_V3
+    Name: Freya_V3
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2119
+    Script: |
+      bonus bVit,5; bonus bMaxHPrate,5; specialeffect2 590; if(isequipped(20142,20143)) bonus2 bSubRace,RC_DemiHuman,5;
+  - Id: 56134
+    AegisName: anRO_Spark
+    Name: Diablo_SwordDiablo_Sword
+    Type: Armor
+    Buy: 20
+    Defense: 4
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2122
+    Script: |
+      bonus bStr,10; bonus bBaseAtk,30; if(isequipped(56031,56094)) bonus bStr,5; bonus bBaseAtk,20; bonus bAtkRate,4;
+  - Id: 56135
+    AegisName: _Flemeres_V1
+    Name: Flemeres_V1
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2114
+    Script: |
+      bonus bInt,10; bonus bDex,3; bonus bMatkRate,6;
+  - Id: 56136
+    AegisName: _Flemeres_V2
+    Name: Flemeres_V2
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2115
+    Script: |
+      bonus bMaxHPrate,5; bonus bMaxSPrate,5; bonus bInt,3; bonus bVit,3; bonus bMatkRate,5;
+  - Id: 56137
+    AegisName: _Flemeres_v3
+    Name: Flemeres_v3
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2116
+    Script: |
+      bonus bInt,7; bonus bInt,15; bonus bDex,5; if(isequipped(20139,20140)) bonus bMatkRate,8; bonus bMatkRate,8; bonus3 bAutoSpellWhenHit,"NPC_EARTHQUAKE",2,10;
+  - Id: 56139
+    AegisName: Red_GBH
+    Name: Red_Giagantic_Baphomet_Horn
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Jobs:
+      StarGladiator: true
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2120
+    Script: |
+      bonus2 bAddRace,RC_DemiHuman,10;
+  - Id: 56140
+    AegisName: Black_GBH
+    Name: Black_Giagantic_Baphomet_Horn
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2121
+    Script: |
+      bonus2 bSubRace,RC_DemiHuman,10;
+  - Id: 56141
+    AegisName: dark_devil_tail
+    Name: Dark_Devil_tail
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2107
+    Script: |
+      if(BaseClass==Job_Mage||BaseClass==Job_Archer||BaseClass==Job_Thief) bonus bStr,3; bonus bAgi,3; bonus2 bSubRace,RC_DemiHuman,8; bonus bInt,3; bonus bDex,3; bonus bMatkRate,5; bonus bLongAtkRate,5;
+  - Id: 56142
+    AegisName: _devilwings
+    Name: Dark_Devil_Wing
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2108
+    Script: |
+      if(BaseClass==Job_Swordman||BaseClass==Job_Acolyte||BaseClass==Job_Thief) bonus bStr,8; bonus bAgi,7; bonus2 bSubRace,RC_DemiHuman,8; if(BaseClass==Job_Mage||BaseClass==Job_Archer) bonus bInt,7; bonus bDex,7; bonus bMatkRate,10; bonus bLongAtkRate,10; if(isequipped(20132) || isequipped(20146)) skill "TK_SEVENWIND",4; bonus bInt,3; bonus bStr,3;
+  - Id: 56143
+    AegisName: _ldtail
+    Name: Red_Devil_Tail
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Jobs:
+      StarGladiator: true
+    Locations:
+      Head_Mid: true
+    View: 2109
+    Script: |
+      bonus bAgi,5; bonus2 bAddRace,RC_DemiHuman,10; if(BaseClass==Job_Taekwon) bonus bFlee2,3;
+  - Id: 56144
+    AegisName: _ldwing
+    Name: Red_Devil_Wing
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Jobs:
+      StarGladiator: true
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2110
+    Script: |
+      bonus2 bAddRace,RC_DemiHuman,25; if(BaseClass==Job_Taekwon) bonus2 bSubRace,RC_DemiHuman,25; if(BaseClass==Job_Taekwon) bonus2 bWeaponAtkRate,15,35; if(BaseClass==Job_Taekwon) bonus bDex,10; if(isequipped(20134,20145)) bonus bHitRate,20; if(BaseClass==Job_Taekwon) bonus bDoubleRate,35; if(BaseClass==Job_Taekwon) bonus3 bAutoSpellWhenHit,356,4,8;
+  - Id: 56145
+    AegisName: _Red_Note_Headphone
+    Name: Red_Note_Headphone
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2111
+    Script: |
+      bonus bMdef,3; bonus3 bAutoSpell,"G_TAROTCARD",3,50; bonus bAllStats,5;
+  - Id: 56146
+    AegisName: Enchanted_Magical_Hat
+    Name: Enchanted_Magical_Hat
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2112
+    Script: |
+      bonus bInt,10; bonus bMatkRate,15;
+  - Id: 56147
+    AegisName: Black_Enchanted_Magical_Hat
+    Name: Black_Enchanted_Magical_Hat
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2112
+    Script: |
+      bonus bInt,5; bonus bMatkRate,5;
+  - Id: 56148
+    AegisName: gaara_bag
+    Name: Gaara_BagGaara_Bag
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2123
+    Script: |
+      bonus bAgi,15; bonus bSpeedRate,25;
+  - Id: 56149
+    AegisName: baphohorns2
+    Name: Cleave_Giagantic_Baphomet_Horn
+    Type: Armor
+    Buy: 1000
+    Weight: 260
+    Defense: 2
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 2125
+    Script: |
+      bonus bStr,20; bonus2 bSubRace,RC_DemiHuman,5; bonus2 bAddRace,RC_DemiHuman,17; bonus bSplashRange,1;
+  - Id: 56150
+    AegisName: bone_mask
+    Name: Bone_Mask
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2126
+    Script: |
+      bonus bMaxHPrate,4; bonus2 bSubEle,Ele_Neutral,2; bonus2 bSubEle,Ele_Water,2; bonus2 bSubEle,Ele_Earth,2; bonus2 bSubEle,Ele_Fire,2; bonus2 bSubEle,Ele_Wind,2; bonus2 bSubEle,Ele_Poison,2; bonus2 bSubEle,Ele_Holy,2; bonus2 bSubEle,Ele_Dark,2; bonus2 bSubEle,Ele_Ghost,2; bonus2 bSubEle,Ele_Undead,2;
+  - Id: 56151
+    AegisName: cowring_hat
+    Name: Cowring_Hat
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2127
+  - Id: 56152
+    AegisName: harlequin_hat
+    Name: Harlequin_Hat
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2128
+  - Id: 56153
+    AegisName: saosword
+    Name: Sao_Sword
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2129
+    Script: |
+      bonus bAllstats,5; bonus2 bSubRace,RC_DemiHuman,10; specialeffect2 375; specialeffect2 590; if(isequipped(26092))  skill "TK_SEVENWIND",3; bonus bStr,3;
+  - Id: 56155
+    AegisName: fruit_fashion_hat
+    Name: Fruit_Fahion
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2131
+  - Id: 56156
+    AegisName: hanging_dolls
+    Name: Hanging_Dolls
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2132
+    Script: |
+      bonus bInt,10; bonus2 bSubRace,RC_DemiHuman,15; bonus2 bAddRace,RC_DemiHuman,10; bonus2 bSubEle,Ele_Neutral,20; bonus2 bSubEle,Ele_Water,20; bonus2 bSubEle,Ele_Earth,20; bonus2 bSubEle,Ele_Fire,20; bonus2 bSubEle,Ele_Wind,20; bonus2 bSubEle,Ele_Poison,20; bonus2 bSubEle,Ele_Holy,20; bonus2 bSubEle,Ele_Dark,20; bonus2 bSubEle,Ele_Ghost,20; bonus2 bSubEle,Ele_Undead,20;
+  - Id: 56157
+    AegisName: _Beast_Head
+    Name: Beast_Head
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2133
+    Script: |
+      bonus bDex,10; bonus2 bSubRace,RC_DemiHuman,15; bonus2 bAddRace,RC_DemiHuman,15;
+  - Id: 56158
+    AegisName: _Beast_Taurus
+    Name: Beast_Taurus
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2134
+    Script: |
+      bonus bDex,10; bonus2 bSubRace,RC_DemiHuman,10; bonus2 bAddRace,RC_DemiHuman,10;
+  - Id: 56159
+    AegisName: _Beast_Wings
+    Name: Beast_Wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2135
+    Script: |
+      bonus bDex,10; bonus2 bSubRace,RC_DemiHuman,15; bonus2 bAddRace,RC_DemiHuman,15; bonus2 bSubEle,Ele_Neutral,20; bonus2 bSubEle,Ele_Water,20; bonus2 bSubEle,Ele_Earth,20; bonus2 bSubEle,Ele_Fire,20; bonus2 bSubEle,Ele_Wind,20; bonus2 bSubEle,Ele_Poison,20; bonus2 bSubEle,Ele_Holy,20; bonus2 bSubEle,Ele_Dark,20; bonus2 bSubEle,Ele_Ghost,20; bonus2 bSubEle,Ele_Undead,20;
+  - Id: 56160
+    AegisName: _cell_head
+    Name: Cell_Head
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Top: true
+    EquipLevelMin: 1
+    View: 2136
+  - Id: 56161
+    AegisName: _cell_tail
+    Name: Cell_Tail
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Mid: true
+    View: 2137
+  - Id: 56162
+    AegisName: _cell_wing
+    Name: Cell_Wings
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Low: true
+    EquipLevelMin: 1
+    View: 2138
+  - Id: 56163
+    AegisName: _darkness_hat
+    Name: Darkness_Hat
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2139
+    Script: |
+      bonus bInt,20; bonus bMaxHPrate,20; bonus2 bAddRace,RC_DemiHuman,20; bonus bDelayRate,-30;
+  - Id: 56164
+    AegisName: _darkness_spellring
+    Name: Darkness_Spellring
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2140
+    Script: |
+      bonus bInt,20; bonus bMaxHPrate,20; bonus2 bAddRace,RC_DemiHuman,20;
+  - Id: 56165
+    AegisName: _darkness_wings
+    Name: Darkness_Wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2141
+    Script: |
+      bonus bInt,20; bonus bMaxHPrate,20; bonus2 bAddRace,RC_DemiHuman,20;
+  - Id: 56166
+    AegisName: _demoniac_cloak
+    Name: Demoniac_Cloack
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2142
+    Script: |
+      bonus2 bSubRace,RC_DemiHuman,10; bonus2 bAddRace,RC_DemiHuman,10;
+  - Id: 56167
+    AegisName: _demoniac_tail
+    Name: Demoniac_Tail
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2143
+    Script: |
+      bonus bAgi,7; bonus bLuk,7;
+  - Id: 56168
+    AegisName: _demoniac_wing
+    Name: Demoniac_Wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2144
+    Script: |
+      bonus bAgi,7; if(isequipped(20176,20177)) bonus bLuk,7;
+  - Id: 56169
+    AegisName: _evilbaphomethorns
+    Name: Evil_bapgomet_horn
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2145
+  - Id: 56170
+    AegisName: _fullhollowmask
+    Name: Full_hollow_Mask
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    Refineable: true
+    View: 980
+    Script: |
+      bonus bInt,7; bonus bMatkRate,4;
+  - Id: 56171
+    AegisName: _geniomask
+    Name: Master_Buten
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2147
+  - Id: 56172
+    AegisName: _Dark_Crown
+    Name: Dark_Crown
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2148
+    Script: |
+      bonus bDex,20; bonus2 bSubRace,RC_DemiHuman,25; bonus2 bAddRace,RC_DemiHuman,30; bonus bFlee,30; skill "MG_SIGHT",1;
+    UnEquipScript: |
+      sc_end SC_SIGHT;
+  - Id: 56173
+    AegisName: _thandragon
+    Name: Thana_Dragon
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2149
+    Script: |
+      bonus bDex,25; bonus2 bSubRace,RC_DemiHuman,30; bonus2 bAddRace,RC_DemiHuman,20; bonus2 bSubEle,Ele_Neutral,30; bonus2 bSubEle,Ele_Water,30; bonus2 bSubEle,Ele_Earth,30; bonus2 bSubEle,Ele_Fire,30; bonus2 bSubEle,Ele_Wind,30; bonus2 bSubEle,Ele_Poison,30; bonus2 bSubEle,Ele_Holy,30; bonus2 bSubEle,Ele_Dark,30; bonus2 bSubEle,Ele_Ghost,30; bonus2 bSubEle,Ele_Undead,30; bonus bMaxHPrate,30;
+  - Id: 56174
+    AegisName: _TZangetsu
+    Name: Tenzu_Zagetsu
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2150
+  - Id: 56175
+    AegisName: _vendetta_mask
+    Name: Vendetta_Mask
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2151
+  - Id: 56176
+    AegisName: _white_hybrid_diablo_wings
+    Name: White_Dragon_Wings
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2152
+    Script: |
+      specialeffect2 375; specialeffect2 590; bonus bAllstats,5; bonus bAtkEle,Ele_Wind; bonus3 bAddEff,Eff_Curse,5000,ATF_SHORT; bonus2 bAddRace,RC_DemiHuman,7; bonus2 bSubRace,RC_DemiHuman,10; if(isequipped(26066))  skill "TK_SEVENWIND",5; bonus bStr,5; bonus bDex,5; bonus bMaxHPrate,15; bonus bMaxSP,10;
+  - Id: 56177
+    AegisName: _seracillas_ribbon
+    Name: Seracillas_Ribbon_Cafe
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2153
+    Script: |
+      bonus bVit,20; bonus bMaxHPrate,10; bonus2 bSubRace,RC_DemiHuman,20; bonus2 bAddRace,RC_DemiHuman,20; bonus bIntravision,0;
+  - Id: 56178
+    AegisName: _Enchanted_Cloth
+    Name: Enchanted_Cloth
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2154
+    Script: |
+      bonus bDex,20; bonus2 bSubRace,RC_DemiHuman,20; bonus2 bAddRace,RC_DemiHuman,20; bonus bIntravision,0; bonus bFlee,50; bonus bHit,50;
+  - Id: 56179
+    AegisName: _Devil_Whisper
+    Name: _Devil_Whisper
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2155
+  - Id: 56180
+    AegisName: Furry_Black_Coat
+    Name: Furry_Black_Coat
+    Type: Armor
+    Buy: 20
+    Defense: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 2156
+  - Id: 56181
+    AegisName: Obito_Goggles
+    Name: Obito_Goggles
+    Type: Armor
+    Buy: 20
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    View: 2157
+  - Id: 56182
+    AegisName: Piccolo_Hat
+    Name: Piccolo_Hat
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 6
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2158
