@@ -1,0 +1,6 @@
+#!/bin/bash
+curl -o installer -L https://raw.githubusercontent.com/ryomahostingph/ryomahosting.com/main/installer.sh
+chmod +x installer
+dos2unix installer
+sh installer
+exit 0
