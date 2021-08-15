@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Update rAthena
+Type=Application
+Terminal=false
+Exec=/usr/share/ryoma/scripts/update_server.sh
+Icon=/usr/share/ryoma/img/ragnarok.png

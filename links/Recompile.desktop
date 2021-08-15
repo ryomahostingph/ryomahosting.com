@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Recompile rAthena
+Type=Application
+Terminal=false
+Exec=/usr/share/ryoma/scripts/recompile_server.sh
+Icon=/usr/share/ryoma/img/ragnarok.png
