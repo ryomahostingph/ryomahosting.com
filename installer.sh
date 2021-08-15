@@ -114,10 +114,9 @@ echo ""
 echo "${BLUE}Step 8/${STEPS}:${NC} Setting Up Desktop Stuff"
 mkdir -p /usr/share/ryoma/
 cd /usr/share/ryoma/
-wget -q https://github.com/ryomahostingph/ryomahosting.com/blob/main/files.zip
-apt-get -qy install unzip
-apt-get -qy install zip
-unzip -q files.zip
+wget -q https://github.com/ryomahostingph/ryomahosting.com/tree/main/links
+wget -q https://github.com/ryomahostingph/ryomahosting.com/tree/main/scripts
+wget -q https://github.com/ryomahostingph/ryomahosting.com/tree/main/img
 cd /usr/share/ryoma/links/
 mkdir -p /home/rathena/Desktop
 cp -R * /home/rathena/Desktop
