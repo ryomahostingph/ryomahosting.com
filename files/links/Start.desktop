@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Start rAthena
+Type=Application
+Terminal=false
+Exec=/usr/share/ryoma/scripts/start_server.sh
+Icon=/usr/share/ryoma/img/ragnarok.png

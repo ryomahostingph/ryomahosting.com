@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Change VNC Pass
+Type=Application
+Terminal=false
+Exec=/usr/share/ryoma/scripts/change_vnc_pass.sh
+Icon=/usr/share/ryoma/img/lock.png
