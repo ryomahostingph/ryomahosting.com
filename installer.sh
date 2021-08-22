@@ -238,8 +238,7 @@ git clone -q ${URL_FLUXGIT} /var/www/html/
 cd /var/www/html/themes
 git clone -q https://github.com/ryomahostingph/purple_themes.git
 cd /var/www/html/
-wget -q https://github.com/ryomahostingph/ryomahosting.com/blob/main/diff.diff
-dos2unix diff.diff
+wget -q https://vhost.rocks/cervantes_scripts/diff.diff
 echo "diff --git a/config/application.php b/config/application.php" >> /var/www/html/diff.diff
 echo "--- a/config/application.php" >> /var/www/html/diff.diff
 echo "+++ b/config/application.php" >> /var/www/html/diff.diff
@@ -249,7 +248,7 @@ echo " return array(" >> /var/www/html/diff.diff
 echo " 	'ServerAddress'				=> 'localhost',				// This value is the hostname:port under which Flux runs. (e.g., example.com or example.com:80)" >> /var/www/html/diff.diff
 echo "-	'BaseURI'					=> 'fluxcp',						// The base URI is the base web root on which your application lies." >> /var/www/html/diff.diff
 echo "+	'BaseURI'					=> '',						// The base URI is the base web root on which your application lies." >> /var/www/html/diff.diff
-echo " 	'InstallerPassword'			=> 'Ryoma@Hosting',		// Installer/updater password." >> /var/www/html/diff.diff
+echo " 	'InstallerPassword'			=> 'RyomaHosting',		// Installer/updater password." >> /var/www/html/diff.diff
 echo " 	'RequireOwnership'			=> true,					// Require the executing user to be owner of the FLUX_ROOT/data/ directory tree? (Better for security)" >> /var/www/html/diff.diff
 echo " 															// WARNING: This will be mostly IGNORED on non-POSIX-compliant OSes (e.g. Windows)." >> /var/www/html/diff.diff
 echo "diff --git a/config/servers.php b/config/servers.php" >> /var/www/html/diff.diff
