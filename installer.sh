@@ -421,6 +421,7 @@ sudo sysctl vm.vfs_cache_pressure=50
 echo "vm.vfs_cache_pressure=50" >> /etc/sysctl.conf
 
 cd /home/rathena/Desktop/rAthena/db/import/
+rm -rf item_db.yml
 wget -q https://raw.githubusercontent.com/ryomahostingph/ryomahosting.com/main/item_db.yml
 
 #echo "-- Full Client --" >> /home/rathena/Desktop/Info.txt
