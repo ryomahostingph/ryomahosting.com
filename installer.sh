@@ -238,7 +238,8 @@ git clone -q ${URL_FLUXGIT} /var/www/html/
 cd /var/www/html/themes
 git clone -q https://github.com/ryomahostingph/purple_themes.git
 cd /var/www/html/
-wget -q https://vhost.rocks/cervantes_scripts/diff.diff
+wget -q https://github.com/ryomahostingph/ryomahosting.com/blob/main/diff.diff
+dos2unix diff.diff
 echo "diff --git a/config/application.php b/config/application.php" >> /var/www/html/diff.diff
 echo "--- a/config/application.php" >> /var/www/html/diff.diff
 echo "+++ b/config/application.php" >> /var/www/html/diff.diff
