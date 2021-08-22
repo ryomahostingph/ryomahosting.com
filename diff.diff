@@ -1,0 +1,33 @@
+echo "diff --git a/config/application.php b/config/application.php" >> /var/www/html/diff.diff
+echo "--- a/config/application.php" >> /var/www/html/diff.diff
+echo "+++ b/config/application.php" >> /var/www/html/diff.diff
+echo "@@ -3,7 +3,7 @@" >> /var/www/html/diff.diff
+echo " // the default, and should be changed as needed." >> /var/www/html/diff.diff
+echo " return array(" >> /var/www/html/diff.diff
+echo " 	'ServerAddress'				=> 'localhost',				// This value is the hostname:port under which Flux runs. (e.g., example.com or example.com:80)" >> /var/www/html/diff.diff
+echo "-	'BaseURI'					=> 'fluxcp',						// The base URI is the base web root on which your application lies." >> /var/www/html/diff.diff
+echo "+	'BaseURI'					=> '',						// The base URI is the base web root on which your application lies." >> /var/www/html/diff.diff
+echo " 	'InstallerPassword'			=> 'secretpassword',		// Installer/updater password." >> /var/www/html/diff.diff
+echo " 	'RequireOwnership'			=> true,					// Require the executing user to be owner of the FLUX_ROOT/data/ directory tree? (Better for security)" >> /var/www/html/diff.diff
+echo " 															// WARNING: This will be mostly IGNORED on non-POSIX-compliant OSes (e.g. Windows)." >> /var/www/html/diff.diff
+echo "diff --git a/config/servers.php b/config/servers.php" >> /var/www/html/diff.diff
+echo "--- a/config/servers.php" >> /var/www/html/diff.diff
+echo "+++ b/config/servers.php" >> /var/www/html/diff.diff
+echo "@@ -15,7 +15,7 @@ return array(" >> /var/www/html/diff.diff
+echo " 				// -- It specifies the encoding to convert your MySQL data to on the website (most likely needs to be utf8)" >> /var/www/html/diff.diff
+echo " 			'Hostname'   => '127.0.0.1'," >> /var/www/html/diff.diff
+echo " 			'Username'   => 'ragnarok'," >> /var/www/html/diff.diff
+echo "-			'Password'   => 'ragnarok'," >> /var/www/html/diff.diff
+echo "+			'Password'   => '${USERPASS}'," >> /var/www/html/diff.diff
+echo " 			'Database'   => 'ragnarok'," >> /var/www/html/diff.diff
+echo " 			'Persistent' => true," >> /var/www/html/diff.diff
+echo " 			'Timezone'   => null // Example: '+0:00' is UTC." >> /var/www/html/diff.diff
+echo "@@ -36,7 +36,7 @@ return array(" >> /var/www/html/diff.diff
+echo " 				// -- It specifies the encoding to convert your MySQL data to on the website (most likely needs to be utf8)" >> /var/www/html/diff.diff
+echo " 			'Hostname'   => '127.0.0.1'," >> /var/www/html/diff.diff
+echo " 			'Username'   => 'ragnarok'," >> /var/www/html/diff.diff
+echo "-			'Password'   => 'ragnarok'," >> /var/www/html/diff.diff
+echo "+			'Password'   => '${USERPASS}'," >> /var/www/html/diff.diff
+echo " 			'Database'   => 'ragnarok'," >> /var/www/html/diff.diff
+echo " 			'Persistent' => true," >> /var/www/html/diff.diff
+echo " 			'Timezone'   => null // Possible values is as described in the comment in DbConfig." >> /var/www/html/diff.diff
