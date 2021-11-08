@@ -96,7 +96,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2000
+    View: 3000
     Script: |
       bonus bAllStats,5;
   - Id: 56001
@@ -108,7 +108,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2001
+    View: 3001
   - Id: 56002
     AegisName: _arcticwings
     Name: arctic_wings
@@ -118,7 +118,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 1060
+    View: 3002
     Script: |
       bonus bInt,7; bonus bMatk,30;
   - Id: 56003
@@ -130,7 +130,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2003
+    View: 3003
   - Id: 56004
     AegisName: _bloodwings
     Name: bloody_wings
@@ -140,7 +140,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2004
+    View: 3004
   - Id: 56005
     AegisName: _bloodybutterflywings
     Name: bloodbutterfly_wings
@@ -150,7 +150,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2005
+    View: 3005
   - Id: 56006
     AegisName: _bluebutterflywings
     Name: bbutterfly_wings
@@ -160,7 +160,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2006
+    View: 3006
   - Id: 56007
     AegisName: _darkfairywings
     Name: Black_fairy_wings
@@ -170,7 +170,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2007
+    View: 3007
     Script: |
       
   - Id: 56008
@@ -182,7 +182,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2008
+    View: 3008
     Script: |
       bonus bStr,3; bonus bAgi,3; bonus bDef,5;
   - Id: 56009
@@ -194,7 +194,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 586
+    View: 3009
     Script: |
       bonus bStr,7; bonus bBaseAtk,30;
   - Id: 56010
@@ -207,7 +207,7 @@ Body:
       Head_Low: true
     EquipLevelMin: 1
     Refineable: true
-    View: 589
+    View: 3010
     Script: |
       bonus bMaxHP,1000; bonus2 bSubEle,Ele_Neutral,2; bonus2 bSubEle,Ele_Water,2; bonus2 bSubEle,Ele_Earth,2; bonus2 bSubEle,Ele_Fire,2; bonus2 bSubEle,Ele_Wind,2; bonus2 bSubEle,Ele_Poison,2; bonus2 bSubEle,Ele_Holy,2; bonus2 bSubEle,Ele_Dark,2; bonus2 bSubEle,Ele_Ghost,2; bonus2 bSubEle,Ele_Undead,2; if(isequipped(56150,56010)) bonus2 bSubEle,Ele_Neutral,4; bonus2 bSubEle,Ele_Water,4; bonus2 bSubEle,Ele_Earth,4; bonus2 bSubEle,Ele_Fire,4; bonus2 bSubEle,Ele_Wind,4; bonus2 bSubEle,Ele_Poison,4; bonus2 bSubEle,Ele_Holy,4; bonus2 bSubEle,Ele_Dark,4; bonus2 bSubEle,Ele_Ghost,4; bonus2 bSubEle,Ele_Undead,4;
   - Id: 56011
@@ -219,7 +219,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 612
+    View: 3011
     Script: |
       bonus bAgi,7; bonus2 bSubEle,Ele_Water,10; bonus2 bSubEle,Ele_Wind,10; bonus2 bSubEle,Ele_Fire,10; bonus2 bSubEle,Ele_Earth,10; bonus2 bSubEle,Ele_Poison,10; bonus2 bSubEle,Ele_Undead,10; bonus2 bSubEle,Ele_Holy,10; bonus2 bSubEle,Ele_Dark,10; bonus2 bSubEle,Ele_Ghost,10;
   - Id: 56012
@@ -231,7 +231,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2012
+    View: 3012
     Script: |
       bonus bDex,5; bonus2 bSubRace,RC_Undead,10 bonus2 bAddEff,Eff_Stone,600;
   - Id: 56013
@@ -243,7 +243,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2013
+    View: 3013
   - Id: 56014
     AegisName: _vampirewings
     Name: Vampire_wings
@@ -253,7 +253,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2014
+    View: 3014
   - Id: 56015
     AegisName: _whitefairywings
     Name: White_fairy_wings
@@ -263,7 +263,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2015
+    View: 3015
   - Id: 56017
     AegisName: _wingsofavalon
     Name: avalon_wings
@@ -273,7 +273,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2017
+    View: 3017
   - Id: 56018
     AegisName: Angel_Wings
     Name: Angel_wings
@@ -283,7 +283,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2018
+    View: 3018
   - Id: 56019
     AegisName: back_sword
     Name: Back Sword
@@ -293,7 +293,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2019
+    View: 3019
   - Id: 56020
     AegisName: black_helm
     Name: Black Helm
@@ -306,7 +306,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2020
+    View: 3020
     Script: |
       bonus bVit,5; bonus bMaxHPrate,5;
   - Id: 56021
@@ -318,7 +318,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2021
+    View: 3021
   - Id: 56022
     AegisName: Circulo_de_Amor
     Name: Flower Ring
@@ -328,7 +328,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2022
+    View: 3022
   - Id: 56023
     AegisName: Circulo_de_Dragao
     Name: Dragon Aura
@@ -339,7 +339,7 @@ Body:
       Head_Low: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2023
+    View: 3023
     Script: |
       bonus bInt,10; bonus bMatk,25; if(isequipped(56147,56170)) bonus bInt,5; bonus bMatkRate,4; bonus bNoGemStone;
   - Id: 56024
@@ -351,7 +351,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2024
+    View: 3024
   - Id: 56026
     AegisName: Dark_Valkyrie_Helm
     Name: Darks Valkyrie
@@ -364,7 +364,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2026
+    View: 3026
   - Id: 56027
     AegisName: Demon_Wings
     Name: Demon Wings
@@ -403,7 +403,7 @@ Body:
       Head_Low: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2027
+    View: 3027
     Script: |
       bonus bVit,10; bonus bMaxHPrate,7; bonus2 bSubEle,Ele_Fire,5; if(isequipped(56020,56027)) bonus bVit,5; bonus bMaxHPrate,4; bonus bMaxHP,1000;
   - Id: 56028
@@ -418,7 +418,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2028
+    View: 3028
     Script: |
       bonus bStr,15;
   - Id: 56029
@@ -433,7 +433,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2029
+    View: 3029
   - Id: 56030
     AegisName: Elmo_de_Valkyria_Branco
     Name: Valkyrie Helm
@@ -446,7 +446,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2030
+    View: 3030
     Script: |
       bonus2 bSubRace,RC_DemiHuman,10; bonus2 bAddRace,RC_DemiHuman,10;
   - Id: 56031
@@ -461,7 +461,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2031
+    View: 3031
     Script: |
       bonus bStr,5; bonus2 bAddRace,RC_DemiHuman,5;
   - Id: 56032
@@ -476,7 +476,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2032
+    View: 3032
     Script: |
       bonus2 bSubRace,RC_DemiHuman,10; bonus2 bAddRace,RC_DemiHuman,10;
   - Id: 56033
@@ -491,7 +491,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2033
+    View: 3033
     Script: |
       bonus bStr,2; bonus bAgi,2; bonus2 bAddRace,RC_DemiHuman,5;
   - Id: 56034
@@ -506,7 +506,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2034
+    View: 3034
     Script: |
       bonus bVit,5; bonus bStr,5; bonus bInt,5; bonus2 bAddRace,RC_DemiHuman,10;
   - Id: 56035
@@ -518,7 +518,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2035
+    View: 3035
     Script: |
       bonus bVit,5;
   - Id: 56036
@@ -533,7 +533,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2036
+    View: 3036
     Script: |
       bonus bStr,3; bonus2 bAddRace,RC_DemiHuman,3;
   - Id: 56037
@@ -548,7 +548,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2037
+    View: 3037
     Script: |
       bonus bDex,20;
   - Id: 56038
@@ -563,7 +563,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2038
+    View: 3038
     Script: |
       bonus bStr,10;
   - Id: 56039
@@ -578,7 +578,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2039
+    View: 3039
     Script: |
       bonus bLuk,10;
   - Id: 56040
@@ -593,7 +593,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2040
+    View: 3040
     Script: |
       bonus bInt,10;
   - Id: 56041
@@ -605,7 +605,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2041
+    View: 3041
     Script: |
       bonus bVit,25; bonus bMaxHPrate,30; bonus2 bSubRace,RC_DemiHuman,25; bonus2 bAddRace,RC_DemiHuman,25; bonus2 bSubEle,Ele_Neutral,20; bonus2 bSubEle,Ele_Water,20; bonus2 bSubEle,Ele_Earth,20; bonus2 bSubEle,Ele_Fire,20; bonus2 bSubEle,Ele_Wind,20; bonus2 bSubEle,Ele_Poison,20; bonus2 bSubEle,Ele_Holy,20; bonus2 bSubEle,Ele_Dark,20; bonus2 bSubEle,Ele_Ghost,20; bonus2 bSubEle,Ele_Undead,20;
   - Id: 56042
@@ -620,7 +620,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2042
+    View: 3042
     Script: |
       bonus bVit,10;
   - Id: 56043
@@ -635,7 +635,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2043
+    View: 3043
     Script: |
       bonus bAgi,10;
   - Id: 56044
@@ -647,7 +647,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2044
+    View: 3044
     Script: |
       bonus bStr,10; bonus bVit,5; bonus bInt,5; bonus2 bAddRace,RC_DemiHuman,10; if(isequipped(46075))  bonus bAllStats,2;
   - Id: 56045
@@ -659,7 +659,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2045
+    View: 3045
     Script: |
       bonus bInt,15; bonus bMatkRate,10;
   - Id: 56046
@@ -674,7 +674,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2046
+    View: 3046
     Script: |
       bonus bDex,10;
   - Id: 56047
@@ -689,7 +689,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2047
+    View: 3047
     Script: |
       bonus bDex,10; bonus bLongAtkRate,15; bonus2 bAddRace,RC_DemiHuman,10; bonus2 bSkillAtk,"AC_DOUBLE",20;
   - Id: 56048
@@ -701,7 +701,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2048
+    View: 3048
     Script: |
       bonus bDex,15; bonus bLongAtkRate,10;
   - Id: 56049
@@ -713,7 +713,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2049
+    View: 3049
     Script: |
       bonus bStr,15;
   - Id: 56050
@@ -728,7 +728,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2050
+    View: 3050
     Script: |
       bonus2 bSubRace,RC_DemiHuman,10; bonus bAllStats,7; bonus3 bAutoSpell,"CG_TAROTCARD",1,50;
   - Id: 56051
@@ -743,7 +743,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 833
+    View: 3051
     Script: |
       bonus bStr,5; bonus2 bAddEle,Ele_Holy,5; bonus2 bAddClass,Class_Boss,5; bonus bBaseAtk,50;
   - Id: 56052
@@ -755,7 +755,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2052
+    View: 3052
     Script: |
       bonus bAgi,5; bonus bStr,1; bonus bSpeedRate,20;
   - Id: 56053
@@ -770,7 +770,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2053
+    View: 3053
     Script: |
       bonus bStr,10; bonus2 bSubRace,RC_DemiHuman,10;
   - Id: 56054
@@ -785,7 +785,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2054
+    View: 3054
     Script: |
       bonus bMdef,1; bonus2 bSubRace,RC_DemiHuman,20; bonus2 bSubRace,RC_PLAYER_HUMAN,20;
   - Id: 56055
@@ -800,7 +800,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2055
+    View: 3055
     Script: |
       bonus bAllStats,2;
   - Id: 56056
@@ -812,7 +812,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2056
+    View: 3056
     Script: |
       bonus bInt,10; bonus2 bSubRace,RC_DemiHuman,15; bonus2 bAddRace,RC_DemiHuman,15;
   - Id: 56057
@@ -824,7 +824,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2057
+    View: 3057
     Script: |
       bonus bHit,30; bonus bMaxHPrate,3; bonus bIntravision,0;
   - Id: 56058
@@ -839,7 +839,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2058
+    View: 3058
   - Id: 56059
     AegisName: _Claw_Wing
     Name: Claw Wings
@@ -849,7 +849,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 834
+    View: 3059
     Script: |
       bonus bDex,7; bonus bLongAtkRate,10; bonus bLongAtkRate,3;
   - Id: 56060
@@ -864,7 +864,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2060
+    View: 3060
     Script: |
       bonus2 bAddRace,RC_DemiHuman,20; bonus2 bAddRace,RC_PLAYER_HUMAN,20;
   - Id: 56061
@@ -879,7 +879,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2061
+    View: 3061
   - Id: 56062
     AegisName: _redvampirewings
     Name: Red Dragon Wings
@@ -889,7 +889,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2062
+    View: 3062
     Script: |
       bonus bAllstats,5; bonus bAtkEle,Ele_Earth;bonus3 bAddEff,Eff_Curse,5000,ATF_SHORT;bonus2 bAddRace,RC_DemiHuman,10; specialeffect2 375; specialeffect2 590; if(isequipped(46032)) skill "TK_SEVENWIND",4; bonus bInt,3;
   - Id: 56063
@@ -901,7 +901,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2063
+    View: 3063
     Script: |
       bonus bAllstats,5; bonus bAtkEle,Ele_Undead;bonus3 bAddEff,Eff_Curse,5000,ATF_SHORT;bonus2 bAddRace,RC_DemiHuman,10; specialeffect2 375; specialeffect2 590; if(isequipped(26031)) skill "TK_SEVENWIND",4; bonus bStr,3;
   - Id: 56064
@@ -913,7 +913,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2064
+    View: 3064
     Script: |
       specialeffect2 375; specialeffect2 590; bonus bAllstats,7; bonus bAtkEle,Ele_Wind; bonus3 bAddEff,Eff_Curse,5000,ATF_SHORT; bonus2 bAddRace,RC_DemiHuman,10; if(isequipped(26030))  skill "TK_SEVENWIND",5; bonus bStr,5; bonus bDex,5;
   - Id: 56065
@@ -928,7 +928,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2065
+    View: 3065
     Script: |
       bonus2 bSubRace,RC_DemiHuman,10; bonus2 bAddRace,RC_DemiHuman,10;
   - Id: 56066
@@ -943,7 +943,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2066
+    View: 3066
     Script: |
       bonus bVit,20; bonus bMaxHPrate,10; bonus2 bSubRace,RC_DemiHuman,20; bonus2 bAddRace,RC_DemiHuman,20; skill "TF_HIDING",1;
     UnEquipScript: |
@@ -957,7 +957,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2067
+    View: 3067
     Script: |
       bonus bAllstats,5;
   - Id: 56068
@@ -969,7 +969,7 @@ Body:
     Slots: 1
     Locations:
       Costume_Head_Low: true
-    View: 2068
+    View: 3068
     Script: |
       bonus bSpeedAddRate,15;
   - Id: 56069
@@ -981,7 +981,7 @@ Body:
     Slots: 1
     Locations:
       Costume_Head_Low: true
-    View: 2069
+    View: 3069
     Script: |
       bonus bSpeedAddRate,15;
   - Id: 56070
@@ -992,7 +992,7 @@ Body:
     Slots: 1
     Locations:
       Costume_Head_Low: true
-    View: 2070
+    View: 3070
     Script: |
       bonus bSpeedAddRate,15;
   - Id: 56071
@@ -1004,7 +1004,7 @@ Body:
     Slots: 1
     Locations:
       Costume_Head_Low: true
-    View: 2071
+    View: 3071
     Script: |
       bonus bSpeedAddRate,15;
   - Id: 56072
@@ -1016,7 +1016,7 @@ Body:
     Slots: 1
     Locations:
       Costume_Head_Low: true
-    View: 2072
+    View: 3072
     Script: |
       bonus bSpeedAddRate,15;
   - Id: 56073
@@ -1031,7 +1031,7 @@ Body:
       SuperNovice: false
     Locations:
       Head_Low: true
-    View: 2073
+    View: 3073
   - Id: 56074
     AegisName: sawings
     Name: wings
@@ -1041,7 +1041,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2074
+    View: 3074
     Script: |
       bonus bStr,10; bonus2 bAddRace,RC_DemiHuman,15; bonus2 bSubRace,RC_DemiHuman,20;
   - Id: 56075
@@ -1056,7 +1056,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2075
+    View: 3075
     Script: |
       bonus bStr,10; bonus2 bAddRace,RC_DemiHuman,15; bonus2 bSubRace,RC_DemiHuman,15;
   - Id: 56076
@@ -1071,7 +1071,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2076
+    View: 3076
     Script: |
       bonus bAllStats,3; bonus2 bSubRace,RC_DemiHuman,5;
   - Id: 56077
@@ -1083,7 +1083,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2077
+    View: 3077
     Script: |
       bonus bDex,5; bonus bStr,5; bonus bInt,5; bonus bFlee,30; if(BaseClass==Job_Gunslinger||BaseClass==Job_Mage||BaseClass==Job_Swordman) bonus bMaxHPrate,10;
   - Id: 56078
@@ -1096,7 +1096,7 @@ Body:
       Head_Low: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2078
+    View: 3078
     Script: |
       bonus bDex,10; bonus bLongAtkRate,5; if(isequipped(56088,56099)) bonus bDex,5; bonus bLongAtkRate,4; bonus bBaseAtk,40;
   - Id: 56079
@@ -1109,7 +1109,7 @@ Body:
     Locations:
       Head_Mid: true
     Refineable: true
-    View: 2079
+    View: 3079
     Script: |
       bonus bStr,7; bonus bAtkRate,3;
   - Id: 56080
@@ -1127,7 +1127,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2080
+    View: 3080
     Script: |
       bonus bInt,10; bonus bStr,10; bonus2 bSubRace,RC_DemiHuman,10;
   - Id: 56082
@@ -1142,7 +1142,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2081
+    View: 3081
     Script: |
       bonus bLuk,3; bonus bCritAtkRate,5; bonus bCritAtkRate,3;
   - Id: 56083
@@ -1154,7 +1154,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2082
+    View: 3082
     Script: |
       bonus bAllStats,5;
   - Id: 56084
@@ -1169,7 +1169,7 @@ Body:
       SuperNovice: false
     Locations:
       Head_Low: true
-    View: 2083
+    View: 3083
     Script: |
       bonus bAllStats,5;
   - Id: 56085
@@ -1184,7 +1184,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2084
+    View: 3084
     Script: |
       bonus bAllStats,5;
   - Id: 56086
@@ -1198,7 +1198,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 835
+    View: 3085
     Script: |
       bonus bStr,5; bonus2 bSubEle,Ele_Neutral,4; bonus2 bSubEle,Ele_Water,4; bonus2 bSubEle,Ele_Earth,4; bonus2 bSubEle,Ele_Fire,4; bonus2 bSubEle,Ele_Wind,4; bonus2 bSubEle,Ele_Poison,4; bonus2 bSubEle,Ele_Holy,4; bonus2 bSubEle,Ele_Dark,4; bonus2 bSubEle,Ele_Ghost,4; bonus2 bSubEle,Ele_Undead,4;
   - Id: 56087
@@ -1212,7 +1212,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2086
+    View: 3086
   - Id: 56088
     AegisName: _dragonhelm
     Name: Dragon Helm
@@ -1238,7 +1238,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2088
+    View: 3088
   - Id: 56090
     AegisName: _pilipinascap
     Name: Philipine Cap
@@ -1250,7 +1250,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2089
+    View: 3089
     Script: |
       bonus bAllStats,5;
   - Id: 56091
@@ -1264,7 +1264,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2090
+    View: 3090
     Script: |
       bonus bAllStats,5;
   - Id: 56092
@@ -1278,7 +1278,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2091
+    View: 3091
     Script: |
       bonus bStr,10; bonus bAgi,5; bonus2 bSubRace,RC_DemiHuman,8;
   - Id: 56093
@@ -1290,7 +1290,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2092
+    View: 3092
     Script: |
       bonus bAllStats,5; bonus2 bSubRace,RC_DemiHuman,10; bonus bFlee,30; skill "MG_SIGHT",1;
     UnEquipScript: |
@@ -1305,7 +1305,7 @@ Body:
     Locations:
       Head_Mid: true
     Refineable: true
-    View: 2093
+    View: 3093
     Script: |
       bonus bStr,7; bonus2 bAddRace,RC_DemiHuman,4;
   - Id: 56095
@@ -1318,7 +1318,7 @@ Body:
     Locations:
       Head_Mid: true
     Refineable: true
-    View: 2094
+    View: 3094
     Script: |
       bonus bVit,7; bonus bMaxHPrate,5;
   - Id: 56096
@@ -1330,7 +1330,7 @@ Body:
     Slots: 1
     Locations:
       Head_Low: true
-    View: 2095
+    View: 3095
     Script: |
       bonus bAllstats,5;
   - Id: 56097
@@ -1342,7 +1342,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2096
+    View: 3096
   - Id: 56098
     AegisName: baracuda_wings
     Name: Baracuda Wings
@@ -1352,7 +1352,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2097
+    View: 3097
   - Id: 56099
     AegisName: _goggle
     Name: Asigth
@@ -1375,7 +1375,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2099
+    View: 3099
     Script: |
       bonus bAllstats,5;
   - Id: 56101
@@ -1387,7 +1387,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2100
+    View: 3100
     Script: |
       bonus bAllstats,5;
   - Id: 56102
@@ -1430,7 +1430,7 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 1
     Refineable: true
-    View: 2101
+    View: 3101
   - Id: 56103
     AegisName: _gmwoman
     Name: GM_Woman
@@ -1471,7 +1471,7 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 1
     Refineable: true
-    View: 2102
+    View: 3102
   - Id: 56104
     AegisName: _dragonsword
     Name: Dragon Sword
@@ -1524,7 +1524,7 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 1
     Refineable: true
-    View: 2104
+    View: 3104
   - Id: 56106
     AegisName: _avarmor
     Name: Angelic_armor
@@ -1651,7 +1651,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2105
+    View: 3105
     Script: |
       bonus bLuk,7; bonus bCriticalRate,10; bonus bCritAtkRate,3;
   - Id: 56116
@@ -1878,7 +1878,7 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 1
     Refineable: true
-    View: 2117
+    View: 3117
     Script: |
       bonus bVit,5; bonus bMaxHPrate,5; bonus2 bSubRace,RC_DemiHuman,5;
   - Id: 56132
@@ -1890,7 +1890,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2118
+    View: 3118
     Script: |
       bonus bVit,5; bonus bMaxHPrate,5; bonus2 bSubRace,RC_DemiHuman,5;
   - Id: 56133
@@ -1902,7 +1902,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2119
+    View: 3119
     Script: |
       bonus bVit,5; bonus bMaxHPrate,5; specialeffect2 590; if(isequipped(20142,20143)) bonus2 bSubRace,RC_DemiHuman,5;
   - Id: 56134
@@ -1915,7 +1915,7 @@ Body:
       Head_Low: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2122
+    View: 3122
     Script: |
       bonus bStr,10; bonus bBaseAtk,30; if(isequipped(56031,56094)) bonus bStr,5; bonus bBaseAtk,20; bonus bAtkRate,4;
   - Id: 56135
@@ -1929,7 +1929,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2114
+    View: 3114
     Script: |
       bonus bInt,10; bonus bDex,3; bonus bMatkRate,6;
   - Id: 56136
@@ -1941,7 +1941,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2115
+    View: 3115
     Script: |
       bonus bMaxHPrate,5; bonus bMaxSPrate,5; bonus bInt,3; bonus bVit,3; bonus bMatkRate,5;
   - Id: 56137
@@ -1953,7 +1953,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2116
+    View: 3116
     Script: |
       bonus bInt,7; bonus bInt,15; bonus bDex,5; if(isequipped(20139,20140)) bonus bMatkRate,8; bonus bMatkRate,8; bonus3 bAutoSpellWhenHit,"NPC_EARTHQUAKE",2,10;
   - Id: 56139
@@ -1969,7 +1969,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2120
+    View: 3120
     Script: |
       bonus2 bAddRace,RC_DemiHuman,10;
   - Id: 56140
@@ -1983,7 +1983,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2121
+    View: 3121
     Script: |
       bonus2 bSubRace,RC_DemiHuman,10;
   - Id: 56141
@@ -1995,7 +1995,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2107
+    View: 3107
     Script: |
       if(BaseClass==Job_Mage||BaseClass==Job_Archer||BaseClass==Job_Thief) bonus bStr,3; bonus bAgi,3; bonus2 bSubRace,RC_DemiHuman,8; bonus bInt,3; bonus bDex,3; bonus bMatkRate,5; bonus bLongAtkRate,5;
   - Id: 56142
@@ -2007,7 +2007,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2108
+    View: 3108
     Script: |
       if(BaseClass==Job_Swordman||BaseClass==Job_Acolyte||BaseClass==Job_Thief) bonus bStr,8; bonus bAgi,7; bonus2 bSubRace,RC_DemiHuman,8; if(BaseClass==Job_Mage||BaseClass==Job_Archer) bonus bInt,7; bonus bDex,7; bonus bMatkRate,10; bonus bLongAtkRate,10; if(isequipped(20132) || isequipped(20146)) skill "TK_SEVENWIND",4; bonus bInt,3; bonus bStr,3;
   - Id: 56143
@@ -2021,7 +2021,7 @@ Body:
       StarGladiator: true
     Locations:
       Head_Mid: true
-    View: 2109
+    View: 3109
     Script: |
       bonus bAgi,5; bonus2 bAddRace,RC_DemiHuman,10; if(BaseClass==Job_Taekwon) bonus bFlee2,3;
   - Id: 56144
@@ -2035,7 +2035,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2110
+    View: 3110
     Script: |
       bonus2 bAddRace,RC_DemiHuman,25; if(BaseClass==Job_Taekwon) bonus2 bSubRace,RC_DemiHuman,25; if(BaseClass==Job_Taekwon) bonus2 bWeaponAtkRate,15,35; if(BaseClass==Job_Taekwon) bonus bDex,10; if(isequipped(20134,20145)) bonus bHitRate,20; if(BaseClass==Job_Taekwon) bonus bDoubleRate,35; if(BaseClass==Job_Taekwon) bonus3 bAutoSpellWhenHit,356,4,8;
   - Id: 56145
@@ -2049,7 +2049,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2111
+    View: 3111
     Script: |
       bonus bMdef,3; bonus3 bAutoSpell,"G_TAROTCARD",3,50; bonus bAllStats,5;
   - Id: 56146
@@ -2063,7 +2063,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2112
+    View: 3112
     Script: |
       bonus bInt,10; bonus bMatkRate,15;
   - Id: 56147
@@ -2077,7 +2077,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2112
+    View: 3112
     Script: |
       bonus bInt,5; bonus bMatkRate,5;
   - Id: 56148
@@ -2089,7 +2089,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2123
+    View: 3123
     Script: |
       bonus bAgi,15; bonus bSpeedRate,25;
   - Id: 56149
@@ -2103,7 +2103,7 @@ Body:
     Locations:
       Head_Top: true
     Refineable: true
-    View: 2125
+    View: 3125
     Script: |
       bonus bStr,20; bonus2 bSubRace,RC_DemiHuman,5; bonus2 bAddRace,RC_DemiHuman,17; bonus bSplashRange,1;
   - Id: 56150
@@ -2115,7 +2115,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2126
+    View: 3126
     Script: |
       bonus bMaxHPrate,4; bonus2 bSubEle,Ele_Neutral,2; bonus2 bSubEle,Ele_Water,2; bonus2 bSubEle,Ele_Earth,2; bonus2 bSubEle,Ele_Fire,2; bonus2 bSubEle,Ele_Wind,2; bonus2 bSubEle,Ele_Poison,2; bonus2 bSubEle,Ele_Holy,2; bonus2 bSubEle,Ele_Dark,2; bonus2 bSubEle,Ele_Ghost,2; bonus2 bSubEle,Ele_Undead,2;
   - Id: 56151
@@ -2130,7 +2130,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2127
+    View: 3127
   - Id: 56152
     AegisName: harlequin_hat
     Name: Harlequin_Hat
@@ -2143,7 +2143,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2128
+    View: 3128
   - Id: 56153
     AegisName: saosword
     Name: Sao_Sword
@@ -2153,7 +2153,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2129
+    View: 3129
     Script: |
       bonus bAllstats,5; bonus2 bSubRace,RC_DemiHuman,10; specialeffect2 375; specialeffect2 590; if(isequipped(26092))  skill "TK_SEVENWIND",3; bonus bStr,3;
   - Id: 56155
@@ -2168,7 +2168,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2131
+    View: 3131
   - Id: 56156
     AegisName: hanging_dolls
     Name: Hanging_Dolls
@@ -2181,7 +2181,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2132
+    View: 3132
     Script: |
       bonus bInt,10; bonus2 bSubRace,RC_DemiHuman,15; bonus2 bAddRace,RC_DemiHuman,10; bonus2 bSubEle,Ele_Neutral,20; bonus2 bSubEle,Ele_Water,20; bonus2 bSubEle,Ele_Earth,20; bonus2 bSubEle,Ele_Fire,20; bonus2 bSubEle,Ele_Wind,20; bonus2 bSubEle,Ele_Poison,20; bonus2 bSubEle,Ele_Holy,20; bonus2 bSubEle,Ele_Dark,20; bonus2 bSubEle,Ele_Ghost,20; bonus2 bSubEle,Ele_Undead,20;
   - Id: 56157
@@ -2196,7 +2196,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2133
+    View: 3133
     Script: |
       bonus bDex,10; bonus2 bSubRace,RC_DemiHuman,15; bonus2 bAddRace,RC_DemiHuman,15;
   - Id: 56158
@@ -2208,7 +2208,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2134
+    View: 3134
     Script: |
       bonus bDex,10; bonus2 bSubRace,RC_DemiHuman,10; bonus2 bAddRace,RC_DemiHuman,10;
   - Id: 56159
@@ -2220,7 +2220,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2135
+    View: 3135
     Script: |
       bonus bDex,10; bonus2 bSubRace,RC_DemiHuman,15; bonus2 bAddRace,RC_DemiHuman,15; bonus2 bSubEle,Ele_Neutral,20; bonus2 bSubEle,Ele_Water,20; bonus2 bSubEle,Ele_Earth,20; bonus2 bSubEle,Ele_Fire,20; bonus2 bSubEle,Ele_Wind,20; bonus2 bSubEle,Ele_Poison,20; bonus2 bSubEle,Ele_Holy,20; bonus2 bSubEle,Ele_Dark,20; bonus2 bSubEle,Ele_Ghost,20; bonus2 bSubEle,Ele_Undead,20;
   - Id: 56160
@@ -2231,7 +2231,7 @@ Body:
     Locations:
       Costume_Head_Top: true
     EquipLevelMin: 1
-    View: 2136
+    View: 3136
   - Id: 56161
     AegisName: _cell_tail
     Name: Cell_Tail
@@ -2239,7 +2239,7 @@ Body:
     Buy: 20
     Locations:
       Costume_Head_Mid: true
-    View: 2137
+    View: 3137
   - Id: 56162
     AegisName: _cell_wing
     Name: Cell_Wings
@@ -2248,7 +2248,7 @@ Body:
     Locations:
       Costume_Head_Low: true
     EquipLevelMin: 1
-    View: 2138
+    View: 3138
   - Id: 56163
     AegisName: _darkness_hat
     Name: Darkness_Hat
@@ -2261,7 +2261,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2139
+    View: 3139
     Script: |
       bonus bInt,20; bonus bMaxHPrate,20; bonus2 bAddRace,RC_DemiHuman,20; bonus bDelayRate,-30;
   - Id: 56164
@@ -2273,7 +2273,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2140
+    View: 3140
     Script: |
       bonus bInt,20; bonus bMaxHPrate,20; bonus2 bAddRace,RC_DemiHuman,20;
   - Id: 56165
@@ -2285,7 +2285,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2141
+    View: 3141
     Script: |
       bonus bInt,20; bonus bMaxHPrate,20; bonus2 bAddRace,RC_DemiHuman,20;
   - Id: 56166
@@ -2300,7 +2300,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2142
+    View: 3142
     Script: |
       bonus2 bSubRace,RC_DemiHuman,10; bonus2 bAddRace,RC_DemiHuman,10;
   - Id: 56167
@@ -2312,7 +2312,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2143
+    View: 3143
     Script: |
       bonus bAgi,7; bonus bLuk,7;
   - Id: 56168
@@ -2324,7 +2324,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2144
+    View: 3144
     Script: |
       bonus bAgi,7; if(isequipped(20176,20177)) bonus bLuk,7;
   - Id: 56169
@@ -2339,7 +2339,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2145
+    View: 3145
   - Id: 56170
     AegisName: _fullhollowmask
     Name: Full_hollow_Mask
@@ -2362,7 +2362,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2147
+    View: 3147
   - Id: 56172
     AegisName: _Dark_Crown
     Name: Dark_Crown
@@ -2375,7 +2375,7 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2148
+    View: 3148
     Script: |
       bonus bDex,20; bonus2 bSubRace,RC_DemiHuman,25; bonus2 bAddRace,RC_DemiHuman,30; bonus bFlee,30; skill "MG_SIGHT",1;
     UnEquipScript: |
@@ -2389,7 +2389,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2149
+    View: 3149
     Script: |
       bonus bDex,25; bonus2 bSubRace,RC_DemiHuman,30; bonus2 bAddRace,RC_DemiHuman,20; bonus2 bSubEle,Ele_Neutral,30; bonus2 bSubEle,Ele_Water,30; bonus2 bSubEle,Ele_Earth,30; bonus2 bSubEle,Ele_Fire,30; bonus2 bSubEle,Ele_Wind,30; bonus2 bSubEle,Ele_Poison,30; bonus2 bSubEle,Ele_Holy,30; bonus2 bSubEle,Ele_Dark,30; bonus2 bSubEle,Ele_Ghost,30; bonus2 bSubEle,Ele_Undead,30; bonus bMaxHPrate,30;
   - Id: 56174
@@ -2401,7 +2401,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2150
+    View: 3150
   - Id: 56175
     AegisName: _vendetta_mask
     Name: Vendetta_Mask
@@ -2411,7 +2411,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2151
+    View: 3151
   - Id: 56176
     AegisName: _white_hybrid_diablo_wings
     Name: White_Dragon_Wings
@@ -2421,7 +2421,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2152
+    View: 3152
     Script: |
       specialeffect2 375; specialeffect2 590; bonus bAllstats,5; bonus bAtkEle,Ele_Wind; bonus3 bAddEff,Eff_Curse,5000,ATF_SHORT; bonus2 bAddRace,RC_DemiHuman,7; bonus2 bSubRace,RC_DemiHuman,10; if(isequipped(26066))  skill "TK_SEVENWIND",5; bonus bStr,5; bonus bDex,5; bonus bMaxHPrate,15; bonus bMaxSP,10;
   - Id: 56177
@@ -2433,7 +2433,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2153
+    View: 3153
     Script: |
       bonus bVit,20; bonus bMaxHPrate,10; bonus2 bSubRace,RC_DemiHuman,20; bonus2 bAddRace,RC_DemiHuman,20; bonus bIntravision,0;
   - Id: 56178
@@ -2445,7 +2445,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2154
+    View: 3154
     Script: |
       bonus bDex,20; bonus2 bSubRace,RC_DemiHuman,20; bonus2 bAddRace,RC_DemiHuman,20; bonus bIntravision,0; bonus bFlee,50; bonus bHit,50;
   - Id: 56179
@@ -2457,7 +2457,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2155
+    View: 3155
   - Id: 56180
     AegisName: Furry_Black_Coat
     Name: Furry_Black_Coat
@@ -2467,7 +2467,7 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 1
-    View: 2156
+    View: 3156
   - Id: 56181
     AegisName: Obito_Goggles
     Name: Obito_Goggles
@@ -2477,7 +2477,7 @@ Body:
     Slots: 1
     Locations:
       Head_Mid: true
-    View: 2157
+    View: 3157
   - Id: 56182
     AegisName: Piccolo_Hat
     Name: Piccolo_Hat
@@ -2490,4 +2490,4 @@ Body:
       Head_Top: true
     EquipLevelMin: 1
     Refineable: true
-    View: 2158
+    View: 3158
