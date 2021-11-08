@@ -430,7 +430,11 @@ wget -q https://raw.githubusercontent.com/ryomahostingph/ryomahosting.com/main/i
 #echo " * URL: http://${SERVER_IP}/?module=pages&action=content&page=downloads" >> /home/rathena/Desktop/Info.txt
 #echo " * Filesystem: FluxCP Desktop Shortcut -> downloads folder" >> /home/rathena/Desktop/Info.txt
 
-
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '906a84df04cea2aa72f40b5f787e49f22d4c2f19492ac310e8cba5b96ac8b64115ac402c8cd292b8a03482574915d1a8') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+sudo mv composer.phar /usr/local/bin/composer
 
 echo "${BLUE}Step 18/${STEPS}:${NC} Finishing up!"
 sudo -u rathena sh -c "myvncserver start"
