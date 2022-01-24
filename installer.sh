@@ -20,7 +20,6 @@ RAGSQLPASS=$(date +%s | sha256sum | base64 | head -c 10 ; echo)
 URL_RA="https://rathena.org/board"
 URL_RAGIT="https://github.com/rathena/rathena"
 URL_FLUXGIT="https://github.com/rathena/FluxCP"
-URL_FULLCLIENT="https://vhost.rocks/cervantes_scripts/client.zip"
 SERVER_IPLIST=$(ip addr|awk '/eth0/ && /inet/ {gsub(/\/[0-9][0-9]/,""); print $2}')
 SERVER_IP=$(echo $SERVER_IPLIST | cut -d ' ' -f 1 )
 
@@ -310,42 +309,7 @@ echo "make a nice cup of coffee. The full client is also around 4GB. Please"
 echo "ensure you have enough disk space!"
 #echo "${YELLOW}Skipping....${NC}"
 mkdir -p /var/www/html/downloads/
-cd /var/www/html/downloads/
-wget -q ${URL_FULLCLIENT}
-unzip -qq client.zip
-rm client.zip
-mkdir -p /var/www/html/downloads/client/data/
-echo "<?xml version=\"1.0\" encoding=\"euc-kr\" ?>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "<clientinfo>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "	<desc>Ragnarok Client Information</desc>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "	<servicetype>korea</servicetype>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "	<servertype>primary</servertype>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "	<connection>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "		<display>Ragnarok Online</display>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "      		<address>${SERVER_IP}</address>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "      		<port>6900</port>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "      		<version>55</version>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "      		<langtype>1</langtype>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "		<loading>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "			<image>loading00.jpg</image>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "			<image>loading01.jpg</image>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "		</loading>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "		<aid>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "			<admin>2000000</admin>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "		</aid>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "   	</connection>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-echo "</clientinfo>" >> /var/www/html/downloads/client/data/sclientinfo.xml
-cd /var/www/html/downloads/client/
-wget -q https://vhost.rocks/cervantes_scripts/roclient.exe
 
-# use rsu.pack to create client grf
-
-cd /var/www/html/downloads/
-zip -qqrm fullclient.zip client
-cd /var/www/html/downloads/
-rm -rf client/
-cd /var/www/html/data/schemas/logindb/
-wget -q https://vhost.rocks/cervantes_scripts/cp_cmspages.20170808161901.sql
 chown -R www-data:www-data /var/www/html
 cd /home/
 echo ""
