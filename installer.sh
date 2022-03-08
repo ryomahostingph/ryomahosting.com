@@ -226,6 +226,8 @@ mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob_skill_db2.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob_skill_db2_re.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob_skill_db_re.sql
+mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/roulette_default_data.sql
+mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/web.sql
 mysql -u root -pragnarok -e "USE ragnarok; UPDATE login SET userid = '${USERID}', user_pass = '${USERPASS}' where sex = 'S';"
 echo ""
 
