@@ -199,7 +199,6 @@ echo "You may see warnings here - this is normal"
 cd /home/rathena/Desktop/rAthena
 sudo -u rathena sh -c "git config --global user.email ryomahostingph@gmail.com"
 sudo -u rathena sh -c "git config --global user.name ryomahostingph"
-sudo -u rathena sh -c "git pull https://github.com/vstumpf/rathena.git feature/webservice"
 sudo -u rathena sh -c "./configure --enable-packetver=20200401 --enable-web-service > /dev/null"
 sudo -u rathena sh -c "make clean > /dev/null"
 sudo -u rathena sh -c "make server > /dev/null"
@@ -213,24 +212,29 @@ mysqladmin -u root -pragnarok create ragnarok
 mysql -u root -pragnarok -e "CREATE USER ragnarok@localhost IDENTIFIED BY '${USERPASS}';"
 mysql -u root -pragnarok -e "GRANT ALL PRIVILEGES ON ragnarok.* TO 'ragnarok'@'localhost';"
 mysql -u root -pragnarok -e "FLUSH PRIVILEGES;"
-mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/main.sql
-mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/logs.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_cash_db.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_cash_db2.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_db.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_db2.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_db2_re.sql
+mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_db_equip.sql
+mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_db_etc.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_db_re.sql
+mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_db_re_equip.sql
+mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_db_re_etc.sql
+mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_db_re_usable.sql
+mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/item_db_usable.sql
+mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/logs.sql
+mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/main.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob_db.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob_db2.sql
-mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob_db2_re.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob_db_re.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob_skill_db.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob_skill_db2.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob_skill_db2_re.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/mob_skill_db_re.sql
 mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/roulette_default_data.sql
-mysql -u root -pragnarok ragnarok  < /home/rathena/Desktop/rAthena/sql-files/web.sql
+
 mysql -u root -pragnarok -e "USE ragnarok; UPDATE login SET userid = '${USERID}', user_pass = '${USERPASS}' where sex = 'S';"
 echo ""
 
@@ -252,10 +256,10 @@ echo ""
 
 
 echo "${BLUE}Step 15/${STEPS}:${NC} Installing phpMyAdmin"
-wget -q https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-languages.zip
-unzip -qq phpMyAdmin-5.0.4-all-languages.zip
-rm phpMyAdmin-5.0.4-all-languages.zip
-mv phpMyAdmin-5.0.4-all-languages phpmyadmin
+wget -q https://files.phpmyadmin.net/phpMyAdmin/5.2.0-rc1/phpMyAdmin-5.2.0-rc1-all-languages.zip
+unzip -qq phpMyAdmin-5.2.0-rc1-all-languages.zip
+rm phpMyAdmin-5.2.0-rc1-all-languages.zip
+mv phpMyAdmin-5.2.0-rc1-all-languages phpmyadmin
 cd phpmyadmin
 mv config.sample.inc.php config.inc.php
 echo "<?php" > /var/www/html/phpmyadmin/config.inc.php
