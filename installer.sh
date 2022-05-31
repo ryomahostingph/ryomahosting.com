@@ -202,7 +202,7 @@ sudo -u rathena sh -c "git config --global user.name ryomahostingph"
 sudo -u rathena sh -c "./configure --enable-packetver=20200401 > /dev/null"
 sudo -u rathena sh -c "make clean > /dev/null"
 sudo -u rathena sh -c "make server > /dev/null"
-sudo -u rathena sh -c "chmod a+x login-server && chmod a+x char-server && chmod a+x map-server && chmod a+x web-server"
+sudo -u rathena sh -c "chmod a+x login-server && chmod a+x char-server && chmod a+x map-server"
 echo ""
 
 
