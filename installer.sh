@@ -18,7 +18,7 @@ RAGSQLPASS=$(date +%s | sha256sum | base64 | head -c 10 ; echo)
 
 # URLs
 URL_RA="https://rathena.org/board"
-URL_RAGIT="https://github.com/rathena/rathena"
+URL_RAGIT="https://github.com/ryomahostingph/rathena.git"
 URL_FLUXGIT="https://github.com/rathena/FluxCP"
 SERVER_IPLIST=$(ip addr|awk '/eth0/ && /inet/ {gsub(/\/[0-9][0-9]/,""); print $2}')
 SERVER_IP=$(echo $SERVER_IPLIST | cut -d ' ' -f 1 )
@@ -199,7 +199,7 @@ echo "You may see warnings here - this is normal"
 cd /home/rathena/Desktop/rAthena
 sudo -u rathena sh -c "git config --global user.email ryomahostingph@gmail.com"
 sudo -u rathena sh -c "git config --global user.name ryomahostingph"
-sudo -u rathena sh -c "./configure --enable-packetver=20200401 --enable-web-service > /dev/null"
+sudo -u rathena sh -c "./configure --enable-packetver=20200401 > /dev/null"
 sudo -u rathena sh -c "make clean > /dev/null"
 sudo -u rathena sh -c "make server > /dev/null"
 sudo -u rathena sh -c "chmod a+x login-server && chmod a+x char-server && chmod a+x map-server && chmod a+x web-server"
